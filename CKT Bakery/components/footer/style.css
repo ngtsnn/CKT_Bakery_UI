@@ -1,0 +1,20 @@
+li a{
+    color: #C0C4C8;
+    text-decoration: underline;
+}
+
+li a:hover{
+    color: #ffffff;
+}
+
+.address::before{
+    content: 'Địa chỉ: ';
+}
+
+.tel::before{
+    content: 'Số điện thoại: ';
+}
+
+.mail::before{
+    content: 'Email: ';
+}

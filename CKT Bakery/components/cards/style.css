@@ -1,0 +1,46 @@
+.card:hover{
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, .2), -3px 3px 5px rgba(0, 0, 0, .2), 3px -3px 5px rgba(0, 0, 0, .2), 3px 3px 5px rgba(0, 0, 0, .2);
+    transform: translate(.5);
+}
+
+.card{
+    width: 100%;
+}
+
+.card-header {
+  margin: 10px auto;
+  width: 90%;
+  padding: 0;
+  border: none !important;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-body .product-name {
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-body .unit-price{
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+.card-body .unit-price::after{
+    content: 'vnd';
+}
+
+.card-footer{
+    background-color: white !important;
+    border: none !important;
+}
+
+.icons{
+    display: inline;
+}
