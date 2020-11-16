@@ -1,15 +1,17 @@
-.card:hover{
-    box-shadow: -3px -3px 5px rgba(0, 0, 0, .2), -3px 3px 5px rgba(0, 0, 0, .2), 3px -3px 5px rgba(0, 0, 0, .2), 3px 3px 5px rgba(0, 0, 0, .2);
-    transform: translate(.5);
+.card:hover {
+  box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.2), -3px 3px 5px rgba(0, 0, 0, 0.2),
+    3px -3px 5px rgba(0, 0, 0, 0.2), 3px 3px 5px rgba(0, 0, 0, 0.2);
+  transform: translate(0.5);
 }
 
-.card{
-    width: 100%;
+.card {
+  width: 100%;
 }
 
 .card-header {
   margin: 10px auto;
   width: 90%;
+  height: 200px;
   padding: 0;
   border: none !important;
 }
@@ -20,27 +22,106 @@
 }
 
 .card-body .product-name {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  height: 70px;
+  overflow: hidden;
+}
+
+.card-body .unit-price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.card-body .unit-price::after {
+  content: "vnd";
+}
+
+.card-footer {
+  background-color: white !important;
+  border: none !important;
+  margin: auto;
+}
+
+.icons {
+  width: fit-content;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    display: block;
+    height: 200px;
+  }
+
+  .card-header {
+    float: left !important;
+    width: 50% !important;
+    height: 100%;
     padding: 0;
-    text-align: center;
-    font-weight: bold;
+    margin: 0 !important;
+  }
+
+  .card-body,
+  .card-footer {
+    width: 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: right;
+  }
+
+  .card-body {
+    height: 70%;
+  }
+
+  .card-footer {
+    height: 25%;
+  }
 }
 
-.card-body .unit-price{
-    font-weight: bold;
-    text-align: center;
-    font-size: 24px;
-}
+@media screen and (max-width: 500px) {
+  .card {
+    display: block;
+    height: 150px;
+  }
 
-.card-body .unit-price::after{
-    content: 'vnd';
-}
+  .card-header {
+    float: left !important;
+    width: 45% !important;
+    height: 100%;
+    padding: 0;
+    margin: 0 !important;
+  }
 
-.card-footer{
-    background-color: white !important;
-    border: none !important;
-}
+  .card-body,
+  .card-footer {
+    width: 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: right;
+  }
 
-.icons{
-    display: inline;
+  .card-body {
+    height: 70%;
+  }
+
+  .card-body .product-name {
+    font-size: 26px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .card-body .unit-price {
+    font-size: 18px;
+  }
+
+  .card-footer {
+    height: 25%;
+    font-size: 10px;
+  }
 }

@@ -1,3 +1,19 @@
-.carousel-item{
-    height: 500px;
+.carousel-item {
+  height: 750px;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-item {
+    height: 280px;
+  }
 }
