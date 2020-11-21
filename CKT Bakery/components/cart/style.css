@@ -68,12 +68,6 @@
 
 /* Body/Header */
 
-body {
-    padding: 0;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-}
-
 label {
     color: #aaa;
 }
@@ -81,7 +75,9 @@ label {
 .shopping-cart {
     margin-top: 10px;
     margin-bottom: 45pt;
-    padding: 10pt
+    padding: 10pt;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
 }
 
 
@@ -95,8 +91,7 @@ label {
 }
 
 .column-labels .product-image,
-.column-labels .product-details,
-.column-labels .product-removal {
+.column-labels .product-details {
     text-indent: -9999px;
 }
 
@@ -141,6 +136,7 @@ label {
     font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
     font-size: 15px;
     border-radius: 3px;
+    width: 50px;
 }
 
 .product .remove-product:hover {
@@ -179,14 +175,14 @@ label {
     border: 0;
     margin-top: 20px;
     padding: 6px 25px;
-    background-color: #4e09be;
+    background-color: #a18c12;
     color: white;
     font-size: 25px;
     border-radius: 3px;
 }
 
 .checkout:hover {
-    background-color: #040e9b;
+    background-color: #f5d311;
 }
 
 @media screen and (max-width: 768px) {
@@ -201,6 +197,7 @@ label {
     .product-image {
         float: right;
         width: auto;
+        height: 50px;
     }
     .product-image img {
         margin: 0 0 10px 10px;
@@ -210,30 +207,14 @@ label {
         margin-bottom: 10px;
         width: auto;
     }
+    .product-removal,
+    .product-quantity,
     .product-price {
-        clear: both;
-        width: 70px;
-    }
-    .product-quantity {
-        width: 100px;
+        margin-top: 60px;
     }
     .product-quantity input {
-        margin-left: 50px;
+        margin-left: 60pt;
     }
-    .product-quantity:before {}
-    .product-removal {
-        width: auto;
-    }
-    .product-line-price {
-        float: right;
-        width: 70px;
-    }
-}
-
-
-/* Make more adjustments for phone */
-
-@media screen and (max-width: 500px) {
     .product-removal {
         float: right;
     }
@@ -241,15 +222,35 @@ label {
         float: right;
         clear: left;
         width: auto;
-        margin-top: 10px;
+        margin-top: 30px;
+    }
+}
+
+
+/* Make more adjustments for phone */
+
+@media screen and (max-width: 500px) {
+    .product-removal,
+    .product-quantity,
+    .product-price {
+        margin-top: 60px;
+    }
+    .product-removal {
+        float: right;
+    }
+    .product-line-price {
+        float: right;
+        clear: left;
+        width: auto;
+        margin-top: 30px;
     }
     .product .product-line-price:before {
         content: "Tổng tiền: ";
     }
     .totals .totals-item label {
-        width: 60%;
+        width: 40%;
     }
     .totals .totals-item .totals-value {
-        width: 40%;
+        width: 50%;
     }
 }
