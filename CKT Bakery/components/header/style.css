@@ -23,3 +23,45 @@
 .bakery-name{
     margin-right: 50px;
 }
+
+.menu-bar{
+    background-color: orange;
+}
+
+.btn{
+    color: black;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    color: white;
+    background-color: chocolate;
+    border: 1px solid chocolate;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+a.nav-link:hover{
+    background-color: rgb(209, 104, 5);
+    border-radius: 5px;
+    color: white !important;
+}
+
+.dropdown-menu{
+    background-color: orange;
+}
+
+.dropdown-item{
+    background-color: orange;
+    text-decoration: none;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(209, 104, 5);
+    border-radius: 15px;
+    color: white;
+}

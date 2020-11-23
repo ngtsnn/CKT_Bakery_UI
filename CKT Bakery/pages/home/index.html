@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../../components/cards/style.css">
     <link rel="stylesheet" href="../../components/carousel/style.css">
     <link rel="stylesheet" href="../../components/jumbotron/style.css">
-
+    <link rel="stylesheet" href="../../components/backtotop/backtotop.css">
     <title>CKT Bakery</title>
   </head>
 
@@ -31,10 +31,10 @@
           <img src="../../images/logos/logo_small.png" alt="CKT Bakery" />
         </a>
         <span class="heading-right">
-          <a class="fa-3x mr-sm" href="#">
+          <a class="fa-2x mr-sm" href="#">
             <i class="far fa-user"></i>
           </a>
-          <a class="fa-3x mr-sm" href="#">
+          <a class="fa-2x mr-sm" href="#">
             <i class="fas fa-shopping-cart"></i>
           </a>
         </span>
@@ -74,7 +74,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Bánh ngọt
+                  Bánh Mặn
                 </a>
                 <div class="dropdown-menu" aria-labelledby="sweet-products">
                   <a class="dropdown-item" href="#">Bánh Pudding</a>
@@ -95,10 +95,10 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Bánh mặn
+                  Bánh Chay
                 </a>
                 <div class="dropdown-menu" aria-labelledby="salty-products">
-                  <a class="dropdown-item" href="#">Bánh mì mặn</a>
+                  <a class="dropdown-item" href="#">Bánh mì Chay</a>
                   <a class="dropdown-item" href="#">Bánh Tart</a>
                   <a class="dropdown-item" href="#">Bánh Pizza</a>
                   <div class="dropdown-divider"></div>
@@ -119,14 +119,14 @@
               <input
                 class="form-control mr-sm-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Bánh muốn tìm"
                 aria-label="Search"
               />
               <button
                 class="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
               >
-                Search
+               <i class="fas fa-search"></i>
               </button>
             </form>
           </div>
@@ -134,9 +134,11 @@
       </div>
     </div>
 
+    
+    <!--Back to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    
     <!--body-->
-
-
     <div class="hot-deal-section">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -740,16 +742,17 @@
         © 2020 Copyright:
         <a href="#"> ctkbakeryloveu.com</a>
       </div>
-
+      
     </footer>
-
+    
+    
 
     <!--import another javascript source-->
     <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
     <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!--import your js here-->
-
+    <script src="../../components/backtotop/back.js"></script>
 
   </body>
 </html>
