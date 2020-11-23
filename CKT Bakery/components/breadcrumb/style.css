@@ -1,0 +1,36 @@
+.my-breadcrumb{
+    
+}
+
+.my-breadcrumb-item{
+    display: inline-block;
+}
+
+.my-breadcrumb-item::after{
+    content: ' / ';
+    color: grey;
+}
+
+.my-breadcrumb-item:last-of-type::after{
+    content: '';
+    color: grey;
+}
+
+.my-breadcrumb .active{
+    color: grey;
+}
+
+.my-breadcrumb-item a{
+    color: blue;
+    text-decoration: none;
+}
+
+.my-breadcrumb-item a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+.my-breadcrumb-item a:hover{
+    color: rgba(0, 183, 255, 0.863);
+    text-decoration: underline;
+}
