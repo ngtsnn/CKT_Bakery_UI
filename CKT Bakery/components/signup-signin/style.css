@@ -5,7 +5,7 @@
     opacity: 0.8;
     width: fit-content;
     background: none;
-
+    margin-left: 0px;
 }
 
 .btn-group{
@@ -50,12 +50,12 @@
     background: #f1f1f1;
   }
 
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
 
-  .form-container .btn {
+.form-container .btn {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
@@ -66,6 +66,13 @@
     opacity: 0.8;
   }
 
-.login-side-btn, .signup-side-btn{
-    width: 50%;
+#login-side-btn, #signup-side-btn{
+    width: 45%;
+    border: none;
+    border-radius: 2%;
 }
+
+.btn-cancel{
+    width: 10%;
+}
+
