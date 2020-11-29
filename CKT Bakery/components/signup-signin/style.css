@@ -1,0 +1,71 @@
+.loginbtn {
+    background-color: #555;
+    padding: none;
+    border: none !important;
+    opacity: 0.8;
+    width: fit-content;
+    background: none;
+
+}
+
+.btn-group{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+.l-s-forms{
+    position: relative;
+}
+
+.login, .signup{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: white;
+    transition: .8s;
+}
+
+.login{
+    transform: translate(-150%,0);
+}
+
+.signup{
+    background-color: white;
+    transform: translate(150%,0);
+}
+
+.l-s-forms .active{
+    transform: translate(0,0);
+    transition: .8s;
+}
+
+
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+.login-side-btn, .signup-side-btn{
+    width: 50%;
+}
