@@ -1,0 +1,14 @@
+.form-popup {
+    /* display: none; */
+    position: fixed;
+    height: 340px;
+    width: 40%;
+    background-color: white;
+    top: 100px;
+    left: 35%;
+    border-radius: 10px;
+    z-index: 1000; 
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    padding: 0 20px;
+}

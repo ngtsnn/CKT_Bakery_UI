@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../../components/carousel/style.css" />
     <link rel="stylesheet" href="../../components/jumbotron/style.css" />
     <link rel="stylesheet" href="../../components/backtotop/style.css" />
+    <link rel="stylesheet" href="../../components/popup-form/style.css">
+    <link rel="stylesheet" href="../../components/signup-signin/style.css">
 
     <title>CKT Bakery</title>
   </head>
@@ -32,10 +34,86 @@
           <img src="../../images/logos/logo_small.png" alt="CKT Bakery" />
         </a>
         <span class="heading-right">
-          <a class="fa-2x mr-sm" href="#">
-            <i class="far fa-user"></i>
-          </a>
-          <a class="fa-2x mr-sm" href="#">
+          <button class=" mr-sm c-yellow loginbtn" onclick="openform()" >
+            <i class="fa-2x far fa-user"></i>
+          </button>
+          <div class="form-popup col-lg-6" id="myForm">
+            <div class="btn-group">
+              <button id="login-side-btn">
+                Login
+              </button>
+              <button id="signup-side-btn">
+                Signup
+              </button>
+            </div>
+            <div class="l-s-forms">
+              <div class="login active" id="login-side">
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                          Nhớ mật khẩu
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="signup" id="signup-side">
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-2">Checkbox</div>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                          Example checkbox
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a class="fa-2x mr-sm c-yellow" href="#">
             <i class="fas fa-shopping-cart"></i>
           </a>
         </span>
@@ -755,6 +833,8 @@
 
     <!--import your js here-->
     <script src="../../components/backtotop/script.js"></script>
+    <script src="../../components/popup-form/script.js"></script>
+    <script src="../../components/signup-signin/script.js"></script>
 
   </body>
 </html>
