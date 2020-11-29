@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--import form another css source-->
+    <!--must reset first-->
+    <link rel="stylesheet" href="../../asset/reset.css" />
+    <link rel="stylesheet" href="../../asset/setup.css" />
+    <link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../asset/fontawesome/css/all.min.css" />
+
+    <!--add your style here-->
+    <link rel="stylesheet" href="../../components/AdminLogin/style.css">
+    <title>CKT Bakery</title>
+  </head>
+  <body>
+    <div class="gap-lg"></div>
+    <div class="gap-lg"></div>
+    <div class="gap-md d-none d-lg-block"></div>
+    <div class="login-form">
+      <form action="" method="post">
+        <div class="input-group">
+          <input type="text" id="username" name="username" autoComplete="off" required/>
+          <label for="username" class="flow"> Tài khoản </label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" required/>
+          <label for="password" class="flow"> Mật khẩu </label>
+        </div>
+        <div class="input-group">
+          <input type="checkbox" id="savepass" name="savepass" class="mt-1 mr-2"/>
+          <label for="savepass"> Lưu mật khẩu </label>
+          <a href="#"> Quên mật khẩu? </a>
+        </div>
+        <input type="submit" class="btn btn-outline-light" value="Đăng nhập"/>
+      </form>
+    </div>
+
+    <!--import another javascript source-->
+    <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--import your js here-->
+    <script src="../../components/AdminLogin/script.js"></script>
+
+  </body>
+</html>
