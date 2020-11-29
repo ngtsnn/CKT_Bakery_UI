@@ -30,11 +30,16 @@ body{
     left: 0;
 }
 
+.login-form .input-group input[type='checkbox']{
+    cursor: pointer;
+}
+
 .login-form .input-group a{
     width: 140px;
     display: block;
     color: white;
     float: right;
+    text-align: right;
 }
 
 .login-form .input-group a:hover{
