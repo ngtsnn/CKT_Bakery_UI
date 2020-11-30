@@ -23,3 +23,24 @@
 .bakery-name{
     margin-right: 50px;
 }
+
+#search {
+    color: rgb(230, 180, 0);
+    border-color: rgb(230, 180, 0);
+}
+
+#search:hover {
+    color: rgb(230, 180, 0);
+    border-color: rgb(230, 180, 0);
+    background-color:  rgb(247, 232, 181);
+}
+
+.nav-link, .dropdown-item{
+    text-decoration: none;
+}
+
+.nav-link:hover, .dropdown-item:hover{
+    background-color: rgb(230, 180, 0);
+    text-decoration: none;
+    border-radius: 3%;
+}
