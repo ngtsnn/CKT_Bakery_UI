@@ -10,6 +10,8 @@ loginSideBtn.addEventListener('click', (event) => {
     }
     else{
         loginSide.classList.add('active');
+        loginSideBtn.classList.add('active');
+        signupSideBtn.classList.remove('active')
         signupSide.classList.remove('active');
 
     }
@@ -24,7 +26,8 @@ signupSideBtn.addEventListener('click', (event) => {
     }
     else{
         signupSide.classList.add('active');
-        loginSide.classList.remove('active');
-
+        signupSideBtn.classList.add("active");
+        loginSide.classList.remove("active");
+        loginSideBtn.classList.remove('active');
     }
 })

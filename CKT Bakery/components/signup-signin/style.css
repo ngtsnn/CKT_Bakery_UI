@@ -71,13 +71,14 @@
     width: 45%;
     border: none;
     border-radius: 2%;
+    outline: none;
 }
 
 #login-side-btn:hover, #signup-side-btn:hover, .btn-cancel:hover {
     background-color: rgb(230, 180, 0);
 }
 
-#login-side-btn:active, #signup-side-btn:active {
+#login-side-btn.active, #signup-side-btn.active {
     background-color: rgb(230, 180, 0);
     outline-style: none;
     border: none;
@@ -89,6 +90,7 @@
     border: none;
     outline-style: none;
     border-radius: 2%;
+    outline: none;
 }
 
 .btn-primary {
