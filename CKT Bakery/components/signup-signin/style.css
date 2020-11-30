@@ -56,7 +56,7 @@
   }
 
 .form-container .btn {
-    background-color: #4CAF50;
+    background-color: rgb(230, 180, 0);
     color: white;
     padding: 16px 20px;
     border: none;
@@ -66,13 +66,36 @@
     opacity: 0.8;
   }
 
+
 #login-side-btn, #signup-side-btn{
     width: 45%;
     border: none;
     border-radius: 2%;
 }
 
-.btn-cancel{
-    width: 10%;
+#login-side-btn:hover, #signup-side-btn:hover, .btn-cancel:hover {
+    background-color: rgb(230, 180, 0);
 }
 
+#login-side-btn:active, #signup-side-btn:active {
+    background-color: rgb(230, 180, 0);
+    outline-style: none;
+    border: none;
+} 
+
+
+.btn-cancel{
+    width: 10%;
+    border: none;
+    outline-style: none;
+    border-radius: 2%;
+}
+
+.btn-primary {
+    background-color:rgb(230, 180, 0);
+    border: none;
+}
+
+button.active {
+    background-color:rgb(230, 180, 0);
+}
