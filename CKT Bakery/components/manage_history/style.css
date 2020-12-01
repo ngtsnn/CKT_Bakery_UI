@@ -1,0 +1,14 @@
+.container {
+    background-color: #F7F7F7;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.border {
+    border: 1px solid;
+    padding: 10px;
+    background: rgb(202, 134, 8);
+    border-radius: 4px;
+    margin-right: 20px;
+}
