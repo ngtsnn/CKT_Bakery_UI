@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../asset/reset.css" />
+    <link rel="stylesheet" href="../../asset/setup.css" />
+    <link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../asset/fontawesome/css/all.min.css" />
+
+    <!--add your style here-->
+    <link rel="stylesheet" href="../../components/header/style.css" />
+    <link rel="stylesheet" href="../../components/footer/style.css" />
+    <link rel="stylesheet" href="../../components/title/style.css" />
+    <link rel="stylesheet" href="../../components/cards/style.css" />
+    <link rel="stylesheet" href="../../components/cart/style.css" />
+    <link rel="stylesheet" href="../../components/purchase/style.css" />
+    <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Purchase</title>
+</head>
+
+<body>
+    <div class="container py-1">
+        <div class="p-5 bg-white">
+            <!-- Rounded tabs -->
+            <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center">
+                <li class="nav-item flex-sm-fill">
+                    <a id="home-tab" data-toggle="tab" href="#home" role="tab" class="nav-link font-weight-bold active">Quản lí đơn hàng</a
+            >
+          </li>
+          <li class="nav-item flex-sm-fill">
+            <a
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              class="nav-link font-weight-bold"
+              >Lịch sử mua hàng</a
+            >
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div
+            id="home"
+            role="tabpanel"
+            class="tab-pane fade px-4 py-5 show active"
+          >
+
+            <div class="shopping-cart">
+              <div class="column-labels">
+                <label class="product-image">Hình ảnh</label>
+                <label class="product-details">Bánh</label>
+                <label class="product-price">Giá</label>
+                <label class="product-quantity">Số lượng</label>
+                <label class="product-line-price">Tổng</label>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên bánh</div>
+                </div>
+                <div class="product-price">10000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+    
+                <div class="product-line-price">10000</div>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên Bánh</div>
+                </div>
+                <div class="product-price">20000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+                <div class="product-line-price">20000</div>
+              </div>
+          
+              <div class="totals">
+                <div class="col-md-12 text-center">
+                  <div class="totals-value float-right border" id="cart-subtotal">30000</div>
+                  <button class="btn btn-outline-info">Liên hệ</button>
+                  <button class="btn btn-danger">Hủy đơn</button>
+              </div>     
+              </div>   
+            </div>
+
+            <div class="shopping-cart">
+              <div class="column-labels">
+                <label class="product-image">Hình ảnh</label>
+                <label class="product-details">Bánh</label>
+                <label class="product-price">Giá</label>
+                <label class="product-quantity">Số lượng</label>
+                <label class="product-line-price">Tổng</label>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên bánh</div>
+                </div>
+                <div class="product-price">10000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+    
+                <div class="product-line-price">10000</div>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên Bánh</div>
+                </div>
+                <div class="product-price">20000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+                <div class="product-line-price">20000</div>
+              </div>
+          
+              <div class="totals">
+                <div class="col-md-12 text-center">
+                  <div class="totals-value float-right border" id="cart-subtotal">30000</div>
+                  <button class="btn btn-outline-info">Liên hệ</button>
+                  <button class="btn btn-danger">Hủy đơn</button>
+              </div>
+              <div class="totals-item">
+                
+              </div>
+              
+              </div>    
+            </div>
+          </div>
+          <div
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            class="tab-pane fade px-4 py-5"
+          >
+ <div class="shopping-cart">
+              <div class="column-labels">
+                <label class="product-image">Hình ảnh</label>
+                <label class="product-details">Bánh</label>
+                <label class="product-price">Giá</label>
+                <label class="product-quantity">Số lượng</label>
+                <label class="product-line-price">Tổng</label>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên bánh</div>
+                </div>
+                <div class="product-price">10000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+    
+                <div class="product-line-price">10000</div>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên Bánh</div>
+                </div>
+                <div class="product-price">20000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+                <div class="product-line-price">20000</div>
+              </div>
+          
+              <div class="totals">
+                <div class="col-md-12 text-center">
+                  <div class="totals-value float-right border" id="cart-subtotal">30000</div>
+                  <button class="btn btn-outline-info">Liên hệ</button>
+                  <button class="btn btn-outline-primary">Mua tiếp</button>
+              </div>     
+              </div>   
+            </div>
+
+            <div class="shopping-cart">
+              <div class="column-labels">
+                <label class="product-image">Hình ảnh</label>
+                <label class="product-details">Bánh</label>
+                <label class="product-price">Giá</label>
+                <label class="product-quantity">Số lượng</label>
+                <label class="product-line-price">Tổng</label>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên bánh</div>
+                </div>
+                <div class="product-price">10000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+    
+                <div class="product-line-price">10000</div>
+              </div>
+          
+              <div class="product">
+                <div class="product-image">
+                  <img src="../../images/banhngot/pita_bread.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tên Bánh</div>
+                </div>
+                <div class="product-price">20000</div>
+                <div class="product-quantity">
+                  x1
+                </div>
+                <div class="product-line-price">20000</div>
+              </div>
+          
+              <div class="totals">
+                <div class="col-md-12 text-center">
+                  <div class="totals-value float-right border" id="cart-subtotal">30000</div>
+                  <button class="btn btn-outline-info">Liên hệ</button>
+                  <button class="btn btn-outline-primary">Mua tiếp</button>
+              </div>
+              <div class="totals-item">
+                
+              </div>
+              
+              </div>    
+            </div>
+          </div>
+        </div>
+        <!-- End rounded tabs -->
+      </div>
+    </div>
+  </body>
+</html>
