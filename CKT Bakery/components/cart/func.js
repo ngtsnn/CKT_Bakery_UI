@@ -69,19 +69,3 @@ function removeItem(removeButton) {
         recalculateCart();
     });
 }
-// const item = [
-//     { name: "pizza", price: 10, quantity: 1 },
-//     { name: "pizza", price: 10, quantity: 1 },
-//     { name: "pizza", price: 10, quantity: 1 },
-// ]
-// const shipping = 15
-// function render(){
-//     let cart-subtotal = 0;
-//     item.forEach(item => {
-//         cart-subtotalub += item.quantity+item.price
-//     })
-// const cart-total= cart-subtotal+ shipping;
-//     $('#car-subtotal').innerText=$${cart-subtotal}
-//     $('#shippng').innerText=$${shippng}
-//     $('#cart-total').innerText=$${cart-total}
-// }
