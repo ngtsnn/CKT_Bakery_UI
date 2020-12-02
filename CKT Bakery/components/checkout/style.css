@@ -4,29 +4,22 @@ body {
     padding: 8px;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .row {
     display: -ms-flex-box;
     /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap;
-    /* IE10 */
     flex-wrap: wrap;
     margin: 0 -16px;
 }
 
 .col-30 {
     -ms-flex: 40%;
-    /* IE10 */
     flex: 40%;
 }
 
 .col-50 {
     -ms-flex: 50%;
-    /* IE10 */
     flex: 50%;
 }
 
