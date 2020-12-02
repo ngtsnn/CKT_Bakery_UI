@@ -1,0 +1,77 @@
+.side-menu{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    transition: .8s;
+    z-index: 10;
+    margin-top: 60px;
+}
+
+.content{
+    margin-left: 200px;
+    transition: .8s;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.side-menu .side-bar .navbar-nav .active{
+    background-color: rgba(26, 25, 25, 0.794);
+}
+
+.side-menu .side-bar .navbar-nav .nav-item{
+    height: 60px;
+    padding: 0 0 10px 0;
+    overflow: hidden;
+    line-height: 42px;
+}
+
+.side-menu .side-bar .navbar-nav .nav-item:hover{
+    background-color: rgba(30, 30, 30, 0.9);
+    cursor: pointer;
+}
+
+.side-menu .side-bar .navbar-nav .nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.side-menu .side-bar .navbar-nav .nav-item a i{
+    width: 13px;
+}
+
+.side-menu .side-bar .navbar-nav .nav-item a:hover{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+
+.warp .side-menu.small{
+    width: 40px;
+    transition: .8s;
+}
+
+.warp .side-menu.small ~ .content{
+    margin-left: 40px;
+    transition: .8s;
+}
+
+@media screen and (max-width: 992px){
+    .side-menu{
+        transform: translateX(-100%);
+        transition: .8s;
+    }
+
+    .content{
+        margin-left: 0;
+        transition: .8s;
+    }
+
+    .side-menu.active{
+        transform: translateX(0);
+        transition: .8s;
+    }
+
+    .warp .side-menu.small ~ .content{
+        margin-left: 0px;
+        transition: .8s;
+    }
+}
