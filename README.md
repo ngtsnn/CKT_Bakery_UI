@@ -1,7 +1,7 @@
 # CKT_Bakery_UI
-this UI using html, css, bootstrap, fontawesome, ...
+this UI using html, css, bootstrap, fontawesome and chart.js
 
-- credit by: boostrap, fontawesome, grid960, my work repositories, ...
+- credit by: boostrap, fontawesome, grid960, chart.js.org and my work repositories
 
 This UI is used for coding PHP by my team. If you think it's awesome, feel free to take this with no license. I hope this UI is helpful for you !!!
 
