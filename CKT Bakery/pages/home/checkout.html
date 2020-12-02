@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="../../components/cards/style.css" />
     <link rel="stylesheet" href="../../components/carousel/style.css" />
     <link rel="stylesheet" href="../../components/checkout/style.css" />
+    <link rel="stylesheet" href="../../components/cart/style.css" />
     <script src="../../components/checkout/func.js"></script>
+
     <!-- điều khoản -->
     <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
     <script src="../../asset/bootstrap/js/bootstrap.js"></script>
@@ -134,21 +136,43 @@
         <div class="container">
             <h4>
                 Đơn hàng
-                <span class="price" style="color: black"><i class="fa fa-shopping-cart"></i> <b>4</b></span
-            >
-          </h4>
-          <p><a href="#">Bánh 1</a> <span class="price">15</span></p>
-                <p><a href="#">Bánh 2</a> <span class="price">5</span></p>
-                <p><a href="#">Bánh 3</a> <span class="price">8</span></p>
-                <p><a href="#">Bánh 4</a> <span class="price">2</span></p>
-                <hr />
-                <h3>
-                    <p>
-                        Thành tiền
-                        <span class="price" style="color: black"><b>30</b></span>
-                    </p>
-                </h3>
-                <button type="button" class="my-btn btn-primary">Mua thêm</button>
+            </h4>
+            <div class="shopping-cart">
+                <div class="column-labels">
+                    <label class="product-details">Bánh</label>
+                    <label class="product-price">Giá</label>
+                    <label class="product-quantity">Số lượng</label>
+                </div>
+
+                <div class="product">
+
+                    <div class="product-details">
+                        <div class="product-title">Tên bánh</div>
+                    </div>
+                    <div class="product-price">10000</div>
+                    <div class="product-quantity">
+                        x1
+                    </div>
+                </div>
+
+                <div class="product">
+
+                    <div class="product-details">
+                        <div class="product-title">Tên Bánh</div>
+                    </div>
+                    <div class="product-price">20000</div>
+                    <div class="product-quantity">
+                        x1
+                    </div>
+                </div>
+            </div>
+            <h3>
+                <p>
+                    Thành tiền
+                    <span class="totals-item" style="color: black"><b>3000000</b></span>
+                </p>
+            </h3>
+            <button type="button" class="my-btn btn-primary">Mua thêm</button>
         </div>
     </div>
     </div>

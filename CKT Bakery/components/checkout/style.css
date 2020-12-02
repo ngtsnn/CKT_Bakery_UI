@@ -85,9 +85,18 @@ hr {
     border: 1px solid lightgrey;
 }
 
-span.price {
+.product-quantity {
+    width: 30% !important;
+    float: right !important;
+}
+
+.totals-item {
     float: right;
     color: grey;
+}
+
+.totals-item ::after {
+    content: " VND";
 }
 
 @media (max-width: 800px) {
