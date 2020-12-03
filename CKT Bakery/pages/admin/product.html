@@ -92,93 +92,70 @@
         <div class="container">
           <div class="gap-xs"></div>
           <div class="c-white row">
-            <div class="large-size col-lg-3">
+            <div class="large-size col-lg-6">
               SẢN PHẨM
             </div>
-            <div class="col-lg-3">
-              <input type="search" placeholder="tìm kiếm" class="mt-2 py-1 pl-2 border-0" style="border-radius: 18px; outline:none;">
-            </div>
-            <div class="col-lg-3">
-              <div class="sort-by row bg-dark overflow-hidden my-2 ml-1">
-                <label for="sort-by-item-1" style="color: white;"> Sắp xếp theo: </label>
-                <select name="sort-by-toggle" class="sort-by-item bg-dark" id="sort-by-item-1" style="color: white; width: 85px;">
-                  <option value="id"> ID </option>
-                  <option value="Tên bánh"> Tên bánh </option>
-                  <option value="Đơn giá"> Đơn giá </option>
-                </select>
+            <div class="col-lg-6">
+              <div class="float-right col-lg-2 clear-fix">
+                <a href="./products.html" class="d-block btn btn-success mt-1">
+                  Lưu
+                </a>
               </div>
             </div>
-            <div class="col-lg-3">
-              <a href="./product.html" class="d-block btn btn-primary mt-1">
-                + Thêm bản ghi 
-              </a>
-            </div>
           </div>
-          <div class="gap-xs "></div>
-          <div class="table-responsive-lg">
-            <table class="table table-hover table-striped table-dark">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Tên bánh</th>
-                  <th scope="col">Loại bánh</th>
-                  <th scope="col">Cách chế biến</th>
-                  <th scope="col">Đơn giá</th>
-                  <th scope="col">Đơn vị</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Bánh abc</td>
-                  <td>Bmì / sừng bò</td>
-                  <td>Nướng</td>
-                  <td>20000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
-                    <a href="#" class="btn btn-outline-danger"> xóa </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Bánh mì gì đó</td>
-                  <td>Bmì / bagguete</td>
-                  <td>Nướng</td>
-                  <td>2000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
-                    <a href="#" class="btn btn-outline-danger"> xóa </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Bánh bao 2 trứng muối</td>
-                  <td>Bbao / bánh bao mặn</td>
-                  <td>Hấp</td>
-                  <td>15000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
-                    <a href="#" class="btn btn-outline-danger"> xóa </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Donut sô cô la</td>
-                  <td>BNgọt / Donut</td>
-                  <td>Chiên</td>
-                  <td>10000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
-                    <a href="#" class="btn btn-outline-danger"> xóa </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="gap-xs"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 input-field mt-2">
+                <form class="bg-dark c-white py-2 px-3">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="product-name">Tên bánh</label>
+                      <input type="text" class="form-control" id="product-name" placeholder="Tên bánh">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="origin"> Nguồn gốc </label>
+                      <input type="text" class="form-control" id="origin" placeholder="Nguồn gốc">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="unit-price">Đơn giá</label>
+                      <input type="number" class="form-control" id="unit-price" placeholder="Đơn giá">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="unit"> Đơn vị </label>
+                      <input type="text" class="form-control" id="unit" placeholder="Đơn vị">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-5 relation-field mt-2">
+                <div class="bg-dark c-white py-2 px-3">
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <label for="product-type"> Loại bánh </label>
+                      <select name="product-type" id="product-type" class="form-control">
+                        <option value="bmi/sungbo" selected>bmi/sungbo</option>
+                        <option value="bmi/bagguette">bmi/bagguette</option>
+                        <option value="bngot/donut">bngot/donut</option>
+                        <option value="bngot/gato">bngot/gato</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="cooking-type"> Phương pháp chế biến </label>
+                      <select name="cooking-type" id="cooking-type" class="form-control">
+                        <option value="bmi/sungbo" selected >Hấp</option>
+                        <option value="bmi/bagguette">Luộc</option>
+                        <option value="bngot/donut">Nướng</option>
+                        <option value="bngot/gato">Chiên</option>
+                        <option value="bngot/gato">Sao</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
