@@ -1,0 +1,23 @@
+.result {
+    margin-left: 180px;
+}
+
+.amount-product {
+    font-size: 20px;
+    margin-left: 180px;
+}
+
+@media screen and (max-width: 500px) {
+    .result {
+        margin-left: 0;
+    }
+    
+    .amount-product{
+      display: none;
+      margin-left: 0;
+    }
+
+    .sort-by {
+        position: absolute;
+    }
+}
