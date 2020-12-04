@@ -15,6 +15,7 @@
     <!--add your style here-->
     <link rel="stylesheet" href="../../components/side-menu/style.css">
     <link rel="stylesheet" href="../../components/title/style.css">
+    <link rel="stylesheet" href="../../components/image-upload/style.css">
 
     <title>CKT Bakery</title>
   </head>
@@ -93,7 +94,7 @@
           <div class="gap-xs"></div>
           <div class="c-white row">
             <div class="large-size col-lg-6">
-              SẢN PHẨM
+              <div class="ml-3">SẢN PHẨM</div>
             </div>
             <div class="col-lg-6">
               <div class="float-right col-lg-2 clear-fix">
@@ -107,7 +108,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-7 input-field mt-2">
-                <form class="bg-dark c-white py-2 px-3">
+                <form class="bg-dark c-white py-2 pb-4 px-3">
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="product-name">Tên bánh</label>
@@ -121,7 +122,7 @@
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="unit-price">Đơn giá</label>
-                      <input type="number" class="form-control" id="unit-price" placeholder="Đơn giá">
+                      <input type="number" class="form-control" id="unit-price" placeholder="Đơn giá" min="1000" step="1000">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="unit"> Đơn vị </label>
@@ -129,9 +130,21 @@
                     </div>
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-12">
-                      <label for="image-upload">Ảnh sản phẩm (chưa có code xịn nha nhưng kéo thả được)</label>
-                      <input type="file" accept="image/*" class="form-control" id="image-upload" placeholder="Đơn giá">
+                    <div class="col-lg-12">
+                      <div class="image-upload-container">
+                        <div for="image-upload" class="img-upload-title"> Ảnh sản phẩm </div>
+                        <div class="image-upload-border">
+                          <label for="img-upload"> Chọn ảnh ở đây </label>
+                          <div class="img-upload-box">
+                            <input type="file" accept="image/*" id="img-upload" class="img-upload">
+                            <div class="review-image-box d-none" id="review-box">
+                              <img src="" alt="" class="review-img">
+                            </div>
+                            <div class="drag-here"> Hoặc có thể kéo và thả ở đây </div>
+                          </div>
+                          
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </form>
@@ -162,6 +175,7 @@
                 </div>
               </div>
             </div>
+            <div class="gap-sm"></div>
           </div>
         </div>
       </div>
