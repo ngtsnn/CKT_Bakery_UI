@@ -20,7 +20,7 @@
     <div class="gap-lg"></div>
     <div class="gap-md d-none d-lg-block"></div>
     <div class="login-form">
-      <form action="" method="post">
+      <form action="" method="post" id="admin-login">
         <div class="input-group">
           <input type="text" id="username" name="username" autoComplete="off" required/>
           <label for="username" class="flow"> Tài khoản </label>
@@ -30,9 +30,12 @@
           <label for="password" class="flow"> Mật khẩu </label>
         </div>
         <div class="input-group">
-          <input type="checkbox" id="savepass" name="savepass" class="mt-1 mr-2"/>
+          <input type="checkbox" id="savepass" name="savepass" class="mr-2"/>
           <label for="savepass"> Lưu mật khẩu </label>
           <a href="#"> Quên mật khẩu? </a>
+        </div>
+        <div class="fail text-danger mb-3 d-none">
+          Tài khoản hoặc mật khẩu không đúng!!!
         </div>
         <input type="submit" class="btn btn-outline-light" value="Đăng nhập"/>
       </form>

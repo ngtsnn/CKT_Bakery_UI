@@ -3,11 +3,15 @@
     height: 100%;
     position: fixed;
     transition: .8s;
+    z-index: 10;
+    margin-top: 60px;
 }
 
 .content{
     margin-left: 200px;
     transition: .8s;
+    width: 100%;
+    margin-top: 60px;
 }
 
 .side-menu .side-bar .navbar-nav .active{

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../asset/setup.css" />
     <link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../asset/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../../asset/chartjs/Chart.min.css">
 
     <!--add your style here-->
     <link rel="stylesheet" href="../../components/side-menu/style.css">
@@ -19,13 +20,13 @@
   <body class="bg-secondary">
 
     <!--top navigation-->
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-dark fixed-top">
       <button class="d-lg-none bg-transparent border-0 c-white" id="toggle-sidemenu-btn" type="button" >
         <i class="fas fa-bars fa-2x"></i>
       </button>
       <div class="large-size c-white d-none d-sm-block">Bảng điều khiển</div>
       <div class="logo d-sm-none">
-        <img src="../../images/logos/logo_small.png" alt="CKT Bakery" />
+        <img src="../../images/logos/logo_small.png" height="44px" alt="CKT Bakery" />
       </div>
       <div class="dropdown">
         <button class="bg-transparent border-0 c-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,13 +54,13 @@
               </a>
             </li>
             <li class="nav-item active medium-size">
-              <a href="#" class="nav-link d-block">
+              <a href="./dashboard.html" class="nav-link d-block">
                 <i class="far fa-chart-bar mx-2"></i>
-                Doanh thu
+                Thống kê
               </a>
             </li>
             <li class="nav-item medium-size">
-              <a href="#" class="nav-link d-block">
+              <a href="./products.html" class="nav-link d-block">
                 <i class="fas fa-bread-slice mx-2"></i>
                 Sản phẩm
               </a>
@@ -87,8 +88,143 @@
       </div>
 
       <div class="content">
-        <div class="container-fluit">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequuntur consectetur cum harum deleniti at, nostrum corporis! Facilis sapiente est quam porro repellat quisquam quo veniam, dicta minus ab necessitatibus!
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 m-auto">
+              <canvas id="income-chart"></canvas>
+            </div>
+            <div class="gap-md"></div>
+            <div class="col-lg-6">
+              <div class="c-white title">
+                <div class="large-size float-left">
+                  BÁNH MẶN
+                </div>
+                <div class="float-right mt-3">
+                  <a href="#" class="d-block btn-dark bg-transparent">
+                    Xem chi tiết
+                    <span>
+                      <i class="fas fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="gap-xs"></div>
+              <div class="table-responsive-lg">
+                <table class="table table-hover table-striped table-dark">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Tên bánh</th>
+                      <th scope="col">Số lượng đơn hàng</th>
+                      <th scope="col">Số lượng đã bán</th>
+                      <th scope="col">Doanh thu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Bánh sừng bò</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Bánh mì Baguette</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Bugers</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Bánh mì chảo</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2" class="text-center"> Tổng: </th>
+                      <td> 100 </td>
+                      <td> 232 </td>
+                      <td> 40000000000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="c-white title">
+                <div class="large-size float-left">
+                  BÁNH MẶN
+                </div>
+                <div class="float-right mt-3">
+                  <a href="#" class="d-block btn-dark bg-transparent">
+                    Xem chi tiết
+                    <span>
+                      <i class="fas fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="gap-xs"></div>
+              <div class="table-responsive-lg">
+                <table class="table table-hover table-striped table-dark">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Tên bánh</th>
+                      <th scope="col">Số lượng đơn hàng</th>
+                      <th scope="col">Số lượng đã bán</th>
+                      <th scope="col">Doanh thu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Bánh sừng bò</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Bánh mì Baguette</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Bugers</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Bánh mì chảo</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>20000000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" colspan="2" class="text-center"> Tổng: </th>
+                      <td> 100 </td>
+                      <td> 232 </td>
+                      <td> 40000000000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -96,9 +232,51 @@
     <!--import another javascript source-->
     <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
     <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../asset/chartjs/Chart.bundle.min.js"></script>
 
     <!--import your js here-->
     <script src="../../components/side-menu/script.js"></script>
+    <script src="../../components/pushback-login/script.js"></script>
+    <script>
+      var ctx = document.getElementById('income-chart').getContext('2d');
+      console.log(ctx)
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                  beginAtZero: true
+              }
+            }]
+          }
+        }
+    });
+    </script>
 
   </body>
 </html>
