@@ -206,7 +206,7 @@
   padding-top: 13px;
   font-size: 15px;
   font-weight: bold;
-  color: black;
+  color: #8B6300;
 }
 .text-add-to-card:hover{
   color: #0056B3;
@@ -242,7 +242,7 @@
   color: #0056b3;
 }
 #btn-buynow:hover{
-  background-color: #c74c45da !important;
+  background-color: #e6b400c4 !important;
 }
 
 .icon-buy-1-click {
