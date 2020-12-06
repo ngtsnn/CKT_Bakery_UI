@@ -1,0 +1,69 @@
+<body class="bg-d">
+    <!--body-->
+    <div class="shopping-cart">
+        <div class="column-labels">
+            <label class="product-image">Hình ảnh</label>
+            <label class="product-details">Bánh</label>
+            <label class="product-price">Giá</label>
+            <label class="product-quantity">Số lượng</label>
+            <label class="product-removal">Xóa</label>
+            <label class="product-line-price">Tổng</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="../../images/banhngot/pita_bread.jpg" />
+            </div>
+            <div class="product-details">
+                <div class="product-title">Tên bánh</div>
+                <p class="product-description">
+                    Mô tả.. ,<br /> Mã hàng
+                </p>
+            </div>
+            <div class="product-price">10000</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1" />
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">x</button>
+            </div>
+            <div class="product-line-price">10000</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="../../images/banhngot/pita_bread.jpg" />
+            </div>
+            <div class="product-details">
+                <div class="product-title">Tên Bánh</div>
+                <p class="product-description">
+                    Mô tả.. ,<br /> Mã hàng
+                </p>
+            </div>
+            <div class="product-price">20000</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1" />
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">x</button>
+            </div>
+            <div class="product-line-price">20000</div>
+        </div>
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Thành tiền</label>
+                <div class="totals-value" id="cart-subtotal">30000</div>
+            </div>
+            <div class="totals-item">
+                <label>Phí vận chuyển</label>
+                <div class="totals-value" id="cart-shipping">15000</div>
+            </div>
+            <div class="totals-item" style="color: red; font-size: 20pt">
+                <label>Tổng tiền</label>
+                <div class="totals-value" id="cart-total">45000</div>
+            </div>
+            <button class="checkout">Đặt hàng</button>
+        </div>
+    </div>
+</body>
