@@ -28,6 +28,7 @@
     border: none;
     color: #444f5e;
     width: 100%;
+    outline: none;
 }
 
 .side-list-item span svg{
