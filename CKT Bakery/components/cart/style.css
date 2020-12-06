@@ -90,7 +90,6 @@ label {
     padding-top: 50px;
 }
 
-.column-labels .product-image,
 .column-labels .product-details {
     text-indent: -9999px;
 }
@@ -277,4 +276,9 @@ label {
 
 ::-webkit-scrollbar-thumb {
     background-color: #f8f7f7;
+}
+
+input.larger {
+    transform: scale(4);
+    margin: 30px;
 }
