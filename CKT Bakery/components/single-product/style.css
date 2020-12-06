@@ -196,20 +196,24 @@
 .add-to-card {
   margin-top: 15px;
   border-radius: 28px;
-  background-color:#E6B400;
+  background-color: hsl(0deg 5% 82%);
   max-width: 225px;
   height: 54px;
   text-align: center;
+}
+
+.add-to-card:hover {
+  background-color: rgba(235, 128, 29, 1);
 }
 
 .text-add-to-card {
   padding-top: 13px;
   font-size: 15px;
   font-weight: bold;
-  color: #8B6300;
+  color: rgb(0, 123, 255);
 }
-.text-add-to-card:hover{
-  color: #0056B3;
+.add-to-card:hover .text-add-to-card{
+  color:white;  
 }
 .text-add-to-card::before {
   font-family: "Font Awesome 5 Free";
@@ -230,14 +234,21 @@
   height: 44px;
   justify-content: center;
   display: flex;
-  color: #717171;
+  color: rgb(0, 123, 255);
   align-items: center;
   background-color: hsl(0deg 5% 82%);
 }
-.buy-1-click:hover .icon-buy-1-click i,
-.buy-1-click:hover .text-buy-1-click{
-  color: #0056b3;
+
+.buy-1-click:hover {
+  background-color: rgba(235, 128, 29, 1);
+  color: white;
 }
+
+/* .buy-1-click:hover .icon-buy-1-click i,
+.buy-1-click:hover .text-buy-1-click{
+  background-color: rgba(235, 128, 29, 1);
+  color: white;
+} */
 .ask-a-question:hover{
   color: #0056b3;
 }
@@ -264,21 +275,36 @@
   background-color: hsl(0deg 5% 82%);
 }
 .add-wish-list {
-  color: #717171;
+  background-color: hsl(0deg 5% 82%);
+  color: rgb(0, 123, 255);
   line-height: 48px;
   text-align: center;
 }
+
+.add-wish-list:hover {
+  background-color: rgba(235, 128, 29, 1);
+  color: white;
+  cursor: pointer;
+}
+
 .add-wish-list::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
   font-size: 22px;
+  color: inherit;
 }
 .compart-wish-list {
-  color: #717171;
+  color: rgb(0, 123, 255);
   line-height: 48px;
   text-align: center;
 }
+
+.compart-wish-list:hover {
+  background-color: rgba(235, 128, 29, 1);
+  color: white;
+}
+
 .compart-wish-list::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -299,14 +325,6 @@
 }
 .color-gray-icon{
   color: #717171;
-}
-.product-name{
-  color: #9f3630;
-  font-size: 20px;
-  font-weight: 400;
-}
-.unit-price{
-  font-weight: 300;
 }
 .counter{
   max-width: 50px;

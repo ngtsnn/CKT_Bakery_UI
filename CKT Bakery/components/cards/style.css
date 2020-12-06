@@ -110,10 +110,11 @@
     height: 70%;
   }
 
-  .card-body .product-name {
+  .card-body, .product-name {
     font-size: 26px;
     height: 60px;
     overflow: hidden;
+    color: black !important;
   }
 
   .card-body .unit-price {
