@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--import form another css source-->
-    <!--must reset first-->
-    <link rel="stylesheet" href="../../asset/reset.css" />
-    <link rel="stylesheet" href="../../asset/setup.css" />
-    <link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../asset/fontawesome/css/all.min.css" />
+	<!--import form another css source-->
+	<!--must reset first-->
+	<link rel="stylesheet" href="../../asset/reset.css" />
+	<link rel="stylesheet" href="../../asset/setup.css" />
+	<link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../asset/fontawesome/css/all.min.css" />
 
-    <!--add your style here-->
-    <link rel="stylesheet" href="../../components/header/style.css" />
-    <link rel="stylesheet" href="../../components/footer/style.css" />
-    <link rel="stylesheet" href="../../components/title/style.css" />
-    <link rel="stylesheet" href="../../components/cards/style.css" />
-    <link rel="stylesheet" href="../../components/carousel/style.css" />
-    <link rel="stylesheet" href="../../components/jumbotron/style.css" />
-    <link rel="stylesheet" href="../../components/backtotop/style.css" />
-    <link rel="stylesheet" href="../../components/popup-form/style.css">
-    <link rel="stylesheet" href="../../components/signup-signin/style.css">
-
-    <link rel="stylesheet" href="../../components/single-product/style.css">
-    <title>Page Bánh mì Sài Gòn</title>
+	<!--add your style here-->
+	<link rel="stylesheet" href="../../components/header/style.css" />
+	<link rel="stylesheet" href="../../components/footer/style.css" />
+	<link rel="stylesheet" href="../../components/title/style.css" />
+	<link rel="stylesheet" href="../../components/cards/style.css" />
+	<link rel="stylesheet" href="../../components/carousel/style.css" />
+	<link rel="stylesheet" href="../../components/jumbotron/style.css" />
+	<link rel="stylesheet" href="../../components/backtotop/style.css" />
+	<link rel="stylesheet" href="../../components/popup-form/style.css">
+	<link rel="stylesheet" href="../../components/signup-signin/style.css">
+	<link rel="stylesheet" href="../../components/breadcrumb/style.css" />
+	<link rel="stylesheet" href="../../components/single-product/style.css">
+	<title>CKT Bakery</title>
 </head>
 
 <body class="bg-d">
@@ -199,121 +199,71 @@
     </button>
     <div class="products-section">
         <div class="container">
-            <div class="product-title">
-                <h1 class="product-title__h1">Bánh mì Sài Gòn (5+1)</h1>
-            </div>
-            <div class="product-breadcrumbs">
-                <span class="product-breadcrumbs__a">
-                    <a href="#">Trang chủ</a>
-                </span>
-                <span class="product-breadcrumbs__slash">&nbsp;/&nbsp;</span>
-                <span class="product-breadcrumbs__a">
-                    <a href="#">Bánh ngọt</a>
-                </span>
-                <span class="product-breadcrumbs__slash">&nbsp;/&nbsp;</span>
-                <span class="product-breadcrumbs__current">
-                    Bánh mì Sài Gòn (5+1)
-                </span>
-            </div>
-            <div class="product-rating">
-                <div class="product-rating-content d-flex">
-                    <div class="product-rating__stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <div class="product-rating__code ml-3">
-                        <label for="product-code">CODE:
-                            <span id="product-code" class="font-weight-bold">5E98C9339AB67</span></label>
-                    </div>
+
+            <div class="breadcrumb-section">
+                <div class="gap-xs"></div>
+                <div class="container">
+                    <ul class="my-breadcrumb">
+                        <li class="my-breadcrumb-item">
+                            <a href="../home/index.html"> Trang chủ </a>
+                        </li>
+                        <li class="my-breadcrumb-item">
+                            <a href="../home/index.html"> Trang chủ </a>
+                        </li>
+                        <li class="my-breadcrumb-item">
+                            <a href="../home/index.html"> Trang chủ </a>
+                        </li>
+                        <li class="my-breadcrumb-item active">trang hiện tại</li>
+                    </ul>
                 </div>
             </div>
-            <div class="product-block my-5">
+
+            <div class="product-title">
+                <h1 class="product-title__h1">Bánh mì Sài Gòn</h1>
+            </div>
+
+            <div class="product-block " style="margin-top: 20px; margin-bottom: 50px;">
                 <div class="row">
                     <div class="col-lg-5">
                         <a href="" title="Bánh mì Sài Gòn">
                             <div class="product-img">
                                 <img src="../../images/banhngot/banh-mi-sg.jpg" alt="puta_bread" class="puta_bread">
-                                <div class="icon-save">
-                                    <div class="save-17">
-                                        SAVE 17%
-                                    </div>
-                                </div>
+
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-3">
                         <form class="product-form" action="#">
-                            <div>
-                                <span class="badge badge-success rounded-50"><i class="fa fa-check-circle"></i> Còn
-                                    hàng</span>
-                            </div>
-                            <div class="product-price">17.500 vnd</div>
+
                             <div class="product-discounted-price">15.000 vnd</div>
-                            <div class="line-save">Tiết kiệm: 2.500 vnd (17%)</div>
-                            <div class="hinh-thuc-mua">
-                                <div class="si-hoac-le">Sỉ hoặc lẻ:</div>
-                                <div class="si">Sỉ (5+1)</div>
-                            </div>
-                            <div  class="ask-a-question text-decoration-none" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer">
-                                <i class="fas fa-comments" ></i>
-                                Chọn phương án mua
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Trả lời câu hỏi</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <form>
-                                            <div class="modal-body">
-
-                                                <div class="form-group pl-0">
-                                                    <label for="exampleInputEmail1">Lựa chọn</label>
-                                                    <input type="text" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp" >
-                                                    <small id="emailHelp" class="form-text text-muted"></small>
-                                                </div>
-                                                <div class="form-group pl-0">
-                                                    <label for="exampleInputPassword1">Lời nhắn</label>
-                                                    <input type="text" class="form-control"
-                                                        id="exampleInputPassword1" >
-                                                </div>
-                                                <!-- <div class="form-group form-check pl-0">
-                                                    <input type="checkbox" class="form-check-input" style="margin-left: 0rem;" id="exampleCheck1">
-                                                    <label class="form-check-label" style="margin-left: 20px;" for="exampleCheck1">Ghi nhớ mật khẩu</label>
-                                                </div>
-
- -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-dismiss="modal">Đóng</button>
-                                                <button type="submit" id="btn-buynow" style="background-color:#c74c45 ;" class="btn btn-primary ">Gửi lựa chọn</button>
-                                            </div>
-                                        </form>
+                            <div class="product-rating">
+                                <div class="product-rating-content d-flex">
+                                    <div class="product-rating__stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product-rating__code ml-3">
+                                        <label for="product-code">CODE:
+                                            <span id="product-code" class="font-weight-bold">9420</span></label>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="quantity">
                                 <div class="text-quantity">Số lượng</div>
                                 <a class="btn-desc">
                                     <img src="../../images/icons/iconSub.png" alt="" class="icon-sub">
                                 </a>
-                                <span class="counter">1</span>
+                                <input type="number" class="counter" value="1" />
                                 <a class="btn-inc">
                                     <img src="../../images/icons/iconAdd.png" alt="" class="icon-add">
                                 </a>
                             </div>
                             <div class="add-to-card">
-                                <a href="" class="text-decoration-none">
+                                <a href="#" class="text-decoration-none">
                                     <div class="text-add-to-card">THÊM VÀO GIỎ HÀNG</div>
                                 </a>
                             </div>
@@ -476,7 +426,7 @@
                 </div>
             </div>
             <div class="description">
-                <hr style="max-width: 857px;">
+                <hr style="max-width: 100%; ; ">
                 <div>
                     <span class="text-description">Mô tả</span>
                     <span>
@@ -496,29 +446,16 @@
                     </span>
                 </div>
             </div>
-            <div class="similar-products">
 
-            </div>
             <div class="row">
                 <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-                    <div class="card bg-w card-hover">
-                        <div>
-                            <span class="badge badge-success rounded-50 margin-top-left-10px"><i
-                                    class="fa fa-check-circle"></i> Còn
-                                hàng</span>
-                            <div class="icon-save">
-                                <div class="save-17">
-                                    SAVE 17%
-                                </div>
-                            </div>
+                    <div class="card bg-w">
+                        <div class="card-header">
+                            <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
                         </div>
-
-                        <a href="#" title="Bánh tiêu" class="card-header">
-                            <img src="../../images/banhngot/WholeMepita.jpg" alt="gido" />
-                        </a>
                         <div class="card-body">
                             <h3 class="product-name">
-                                Bánh tiêu
+                                Bánh mì gì đó
                             </h3>
                             <div class="unit-price">
                                 15.000
@@ -526,18 +463,16 @@
                         </div>
 
                         <div class="card-footer bg-w">
-                            <div class="icons ">
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" data-target="#form"
-                                    data-toggle="modal" style="cursor: pointer" title="mua ngay với 1-click">
+                            <div class="icons">
+                                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
                                     <i class="fas fa-hand-point-up"></i>
                                 </a>
 
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" title="xem trước">
+                                <a href="#" class="fa-3x mx-1" title="xem trước">
                                     <i class="far fa-eye"></i>
                                 </a>
 
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none"
-                                    title="thêm vào giỏ hàng">
+                                <a href="#" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
                             </div>
@@ -547,42 +482,29 @@
 
                 <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
                     <div class="card bg-w">
-
-                        <div>
-                            <span class="badge badge-success rounded-50 margin-top-left-10px"><i
-                                    class="fa fa-check-circle"></i> Còn
-                                hàng</span>
-                            <div class="icon-save">
-                                <div class="save-17">
-                                    SAVE 17%
-                                </div>
-                            </div>
+                        <div class="card-header">
+                            <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
                         </div>
-                        <a href="#" title="Bánh mì mè đen" class="card-header ">
-                            <img src="../../images/banhngot/Sesametoppingpita_b.jpg" alt="gido" />
-                        </a>
                         <div class="card-body">
                             <h3 class="product-name">
-                                Bánh mì mè đen
+                                Bánh mì gì đó
                             </h3>
                             <div class="unit-price">
-                                20.000
+                                15.000
                             </div>
                         </div>
 
                         <div class="card-footer bg-w">
                             <div class="icons">
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" data-target="#form"
-                                    data-toggle="modal" style="cursor: pointer" title="mua ngay với 1-click">
+                                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
                                     <i class="fas fa-hand-point-up"></i>
                                 </a>
 
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" title="xem trước">
+                                <a href="#" class="fa-3x mx-1" title="xem trước">
                                     <i class="far fa-eye"></i>
                                 </a>
 
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none"
-                                    title="thêm vào giỏ hàng">
+                                <a href="#" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
                             </div>
@@ -592,41 +514,29 @@
 
                 <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
                     <div class="card bg-w">
-                        <div>
-                            <span class="badge badge-success rounded-50 margin-top-left-10px"><i
-                                    class="fa fa-check-circle"></i> Còn
-                                hàng</span>
-                            <div class="icon-save">
-                                <div class="save-17">
-                                    SAVE 17%
-                                </div>
-                            </div>
+                        <div class="card-header">
+                            <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
                         </div>
-                        <a href="#" title="Bánh tiêu sữa" class="card-header">
-                            <img src="../../images/banhngot/garlick-pitta.jpg" alt="gido" />
-                        </a>
                         <div class="card-body">
                             <h3 class="product-name">
-                                Bánh tiêu sữa
+                                Bánh mì gì đó
                             </h3>
                             <div class="unit-price">
-                                25.000
+                                15.000
                             </div>
                         </div>
 
                         <div class="card-footer bg-w">
                             <div class="icons">
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" data-target="#form"
-                                    data-toggle="modal" style="cursor: pointer" title="mua ngay với 1-click">
+                                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
                                     <i class="fas fa-hand-point-up"></i>
                                 </a>
 
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" title="xem trước">
+                                <a href="#" class="fa-3x mx-1" title="xem trước">
                                     <i class="far fa-eye"></i>
                                 </a>
 
-                                <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none"
-                                    title="thêm vào giỏ hàng">
+                                <a href="#" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
                             </div>
@@ -636,45 +546,36 @@
 
                 <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
                     <div class="card bg-w">
-                        <div>
-                            <span class="badge badge-success rounded-50 margin-top-left-10px"><i
-                                    class="fa fa-check-circle"></i> Còn
-                                hàng</span>
-                            <div class="icon-save">
-                                <div class="save-17">
-                                    SAVE 17%
-                                </div>
-                            </div>
+                        <div class="card-header">
+                            <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
                         </div>
-                        <a href="#" class="card-header">
-                            <img src="../../images/banhngot/Cajuntoppingpita_b.jpg" alt="gido" />
-                        </a>
                         <div class="card-body">
                             <h3 class="product-name">
-                                Bánh mì nướng
+                                Bánh mì gì đó
                             </h3>
                             <div class="unit-price">
-                                25.000
+                                15.000
                             </div>
-
                         </div>
+
                         <div class="card-footer bg-w">
-                            <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" data-target="#form"
-                                data-toggle="modal" style="cursor: pointer" title="mua ngay với 1-click">
-                                <i class="fas fa-hand-point-up"></i>
-                            </a>
+                            <div class="icons">
+                                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                                    <i class="fas fa-hand-point-up"></i>
+                                </a>
 
-                            <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none" title="xem trước">
-                                <i class="far fa-eye"></i>
-                            </a>
+                                <a href="#" class="fa-3x mx-1" title="xem trước">
+                                    <i class="far fa-eye"></i>
+                                </a>
 
-                            <a href="#" class="fa-3x mx-1 color-gray-icon text-decoration-none"
-                                title="thêm vào giỏ hàng">
-                                <i class="fas fa-cart-plus"></i>
-                            </a>
+                                <a href="#" class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
