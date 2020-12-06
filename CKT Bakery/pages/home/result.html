@@ -22,8 +22,8 @@
   <link rel="stylesheet" href="../../components/backtotop/style.css" />
   <link rel="stylesheet" href="../../components/popup-form/style.css" />
   <link rel="stylesheet" href="../../components/signup-signin/style.css" />
+  <link rel="stylesheet" href="../../components/result-search/style.css" />
   <link rel="stylesheet" href="../../components/button-icon-link/style.css" />
-  <link rel="stylesheet" href="../../components/see-more-collapse/style.css" />
 
   <title>CKT Bakery</title>
 </head>
@@ -130,7 +130,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto pt-xs">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../home/index.html">Trang Chủ</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="sweet-products" role="button" data-toggle="dropdown"
@@ -194,48 +194,23 @@
   </button>
 
   <!--body-->
+  <div class="gap-sm"></div>
+  
 
-  <div class="hot-deal-section">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="3000">
-          <img src="../../images/hot-deals/hinh1.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-interval="3000">
-          <img src="../../images/hot-deals/hinh2.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-interval="3000">
-          <img src="../../images/hot-deals/hinh3.png" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
 
   <div class="sweet-cake-section">
-    <div class="gap-md"></div>
     <div class="container">
 
+      <div class="large-size">Kết quả tìm kiếm cho:
+        <span id="input-search"> Bánh Ngọt</span>
+      </div>
+      <!--Filter-->
       <div class="row">
-        <div class="col-md-12 col-xl-6">
-          <div class="title">
-            Bánh ngọt
-          </div>
+        <div class="col-md-12 col-lg-6">
+          Số lượng sản phẩm: <span class="quantity">8</span>
         </div>
-        <div class="d-none d-xl-block col-6">
-          <div class="sort-by float-right row">
+        <div class="d-none d-md-block col-lg-6">
+          <div class="sort-by float-lg-right row">
             <label for="sort-by-item-1"> Sắp xếp theo: </label>
             <select name="sort-by-toggle" class="sort-by-item" id="sort-by-item-1">
               <option value="Mới nhất"> Mới nhất </option>
@@ -248,8 +223,10 @@
       </div>
 
       <div class="gap-xs"></div>
+      <div class="gap-xs"></div>
 
-      <div class="row collapse-post" id="post-1" set-quantity-show-collapse='8'>
+      <!--Result-->
+      <div class="row">
         <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
           <div class="card bg-w">
             <div class="card-header">
@@ -309,37 +286,6 @@
                 <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
             </div>
@@ -537,560 +483,10 @@
             </div>
           </div>
         </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="see-more-contain-full">
-        <a class="see-more-btn" data-target="#post-1">
-          <div class="see-more-text">
-            Xem thêm bài viết
-            <i class="fas fa-angle-down"></i>
-          </div>
-          <div class="see-more-text d-none">
-            Thu gọn   
-            <i class="ml-1 fas fa-angle-up"></i>
-          </div>
-        </a>
       </div>
     </div>
   </div>
-
-  <div class="sweet-cake-section">
-    <div class="gap-md"></div>
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12 col-xl-6">
-          <div class="title">
-            Bánh ngọt
-          </div>
-        </div>
-        <div class="d-none d-xl-block col-6">
-          <div class="sort-by float-right row">
-            <label for="sort-by-item-1"> Sắp xếp theo: </label>
-            <select name="sort-by-toggle" class="sort-by-item" id="sort-by-item-1">
-              <option value="Mới nhất"> Mới nhất </option>
-              <option value="Cũ nhất"> Cũ nhất </option>
-              <option value="Xem nhiều nhất"> Xem nhiều nhất </option>
-              <option value="alphbetic"> alphbetic </option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="gap-xs"></div>
-
-      <div class="row collapse-post" id="post-2" set-quantity-show-collapse='8'>
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">
-                Bánh mì gì đó
-              </h3>
-              <div class="unit-price">
-                15.000
-              </div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="see-more-contain-full">
-        <a class="see-more-btn" data-target="#post-2">
-          <div class="see-more-text">
-            Xem thêm bài viết
-            <i class="fas fa-angle-down"></i>
-          </div>
-          <div class="see-more-text d-none">
-            Thu gọn   
-            <i class="ml-1 fas fa-angle-up"></i>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="self-intro">
-    <div class="gap-lg"></div>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Chúng tôi là CKT Bakery</h1>
-        <a href="#"><img src="#" alt="Ảnh nhóm"></a>
-        <p class="lead">Ngày xưa chúng tôi học công nghệ thông tin cơ. Nhưng sau đó số phận đưa đẩy chúng tôi đi bán
-          bánh mì. Bán xe đẩy lề đường chán quá nên chúng tôi mở hẳn tiệm bánh cho nó sang. Bánh đây ăn ngon lắm nha mại
-          dô mại dô!!!!</p>
-      </div>
-    </div>
-  </div>
-
+  <div class="gap-md"></div>
   <!-- Footer -->
   <footer class="page-footer bg-dark pt-4 c-dark-2">
     <div class="container-fluid text-center text-md-left">
@@ -1100,7 +496,7 @@
           <div class="small-size">
             Nhận thông báo từ chúng tôi
           </div>
-          <div class="input-group my-3 mx-auto ml-lg-0" style="width: 250px;">
+          <div class="input-group my-3 mx-auto" style="width: 250px;">
             <input type="text" class="form-control" placeholder="Nhập Email của bạn">
             <a href="#" class="input-group-append">
               <span class="input-group-text">
@@ -1206,8 +602,6 @@
   <script src="../../components/backtotop/script.js"></script>
   <script src="../../components/popup-form/script.js"></script>
   <script src="../../components/signup-signin/script.js"></script>
-  <script src="../../components/button-icon-link/script.js"></script>
-  <script src="../../components/see-more-collapse/script.js"></script>
 
 </body>
 
