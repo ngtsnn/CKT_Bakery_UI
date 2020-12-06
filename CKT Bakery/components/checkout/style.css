@@ -125,7 +125,7 @@ hr {
 @media screen and (max-width: 500px) {
     .product-price {
         margin-top: 0px !important;
-        width: 45%!important;
+        width: 45% !important;
         display: inline !important;
     }
     .product-quantity {

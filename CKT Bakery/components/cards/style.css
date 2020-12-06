@@ -52,12 +52,13 @@
     margin: auto;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 767px) {
     .card {
         display: block;
         height: 200px;
     }
+
     .card-header {
         float: left !important;
         width: 50% !important;
@@ -65,6 +66,7 @@
         padding: 0;
         margin: 0 !important;
     }
+
     .card-body,
     .card-footer {
         width: 50% !important;
@@ -72,43 +74,14 @@
         padding: 0 !important;
         float: right;
     }
+
     .card-body {
         height: 70%;
     }
+
     .card-footer {
         height: 25%;
     }
-=======
-@media screen and (max-width: 767px) {
-  .card {
-    display: block;
-    height: 200px;
-  }
-
-  .card-header {
-    float: left !important;
-    width: 50% !important;
-    height: 100%;
-    padding: 0;
-    margin: 0 !important;
-  }
-
-  .card-body,
-  .card-footer {
-    width: 50% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    float: right;
-  }
-
-  .card-body {
-    height: 70%;
-  }
-
-  .card-footer {
-    height: 25%;
-  }
->>>>>>> 51f6880e025c4e9519bbaf4576fe424206d25bbb
 }
 
 @media screen and (max-width: 500px) {
@@ -116,6 +89,7 @@
         display: block;
         height: 150px;
     }
+
     .card-header {
         float: left !important;
         width: 45% !important;
@@ -123,6 +97,7 @@
         padding: 0;
         margin: 0 !important;
     }
+
     .card-body,
     .card-footer {
         width: 50% !important;
@@ -130,17 +105,21 @@
         padding: 0 !important;
         float: right;
     }
+
     .card-body {
         height: 70%;
     }
+
     .card-body .product-name {
         font-size: 26px;
         height: 60px;
         overflow: hidden;
     }
+
     .card-body .unit-price {
         font-size: 18px;
     }
+
     .card-footer {
         height: 25%;
         font-size: 10px;

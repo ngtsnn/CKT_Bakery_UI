@@ -1,8 +1,6 @@
 // /* Set rates + misc */
 var shippingRate = 15000;
 var fadeTime = 300;
-
-
 /* Assign actions */
 $('.product-quantity input').change(function() {
     updateQuantity(this);
@@ -12,6 +10,10 @@ $('.product-removal button').click(function() {
     removeItem(this);
 });
 
+$('.product-check').change(() => {
+    recalculateCart();
+})
+
 
 /* Recalculate cart */
 function recalculateCart() {
@@ -19,7 +21,10 @@ function recalculateCart() {
 
     /* Sum up row totals */
     $('.product').each(function() {
-        subtotal += parseFloat($(this).children('.product-line-price').text());
+        if ($(this).children('.product-image').children('.product-check')[0].checked) {
+            subtotal += parseFloat($(this).children('.product-line-price').text());
+        }
+
     });
 
     /* Calculate totals */
