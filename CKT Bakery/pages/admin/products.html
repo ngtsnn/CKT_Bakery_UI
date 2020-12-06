@@ -91,93 +91,94 @@
       <div class="content">
         <div class="container">
           <div class="gap-xs"></div>
-          <div class="col-lg-12">
-            <div class="c-white d-block clearfix">
-              <div class="large-size float-left">
-                SẢN PHẨM
+          <div class="c-white row">
+            <div class="large-size col-lg-3">
+              SẢN PHẨM
+            </div>
+            <div class="col-lg-3">
+              <input type="search" placeholder="tìm kiếm" class="mt-2 py-1 pl-2 border-0" style="border-radius: 18px; outline:none;">
+            </div>
+            <div class="col-lg-3">
+              <div class="sort-by row bg-dark overflow-hidden my-2 ml-1">
+                <label for="sort-by-item-1" style="color: white;"> Sắp xếp theo: </label>
+                <select name="sort-by-toggle" class="sort-by-item bg-dark" id="sort-by-item-1" style="color: white; width: 85px;">
+                  <option value="id"> ID </option>
+                  <option value="Tên bánh"> Tên bánh </option>
+                  <option value="Đơn giá"> Đơn giá </option>
+                </select>
               </div>
-              <a href="#" class=" float-right btn btn-primary">
+            </div>
+            <div class="col-lg-3">
+              <a href="./product.html" class="d-block btn btn-primary mt-1">
                 + Thêm bản ghi 
               </a>
-              <div class="d-none float-right mt-1 d-md-block mr-3">
-                <div class="sort-by row bg-dark overflow-hidden">
-                  <label for="sort-by-item-1" style="color: white;"> Sắp xếp theo: </label>
-                  <select name="sort-by-toggle" class="sort-by-item bg-dark" id="sort-by-item-1" style="color: white; width: 85px;">
-                    <option value="id"> ID </option>
-                    <option value="Tên bánh"> Tên bánh </option>
-                    <option value="Đơn giá"> Đơn giá </option>
-                  </select>
-                </div>
-              </div>
-              <input type="search" placeholder="tìm kiếm" class="float-right pt-1 px-2 mt-1 mr-4 rounded border-0" style="width:120px;">
-              
             </div>
-            <div class="gap-xs "></div>
-            <div class="table-responsive-lg">
-              <table class="table table-hover table-striped table-dark">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Tên bánh</th>
-                    <th scope="col">Loại bánh</th>
-                    <th scope="col">Cách chế biến</th>
-                    <th scope="col">Đơn giá</th>
-                    <th scope="col">Đơn vị</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Bánh abc lo</td>
-                    <td>Bmì / sừng bò</td>
-                    <td>Nướng</td>
-                    <td>20000</td>
-                    <td>Cái</td>
-                    <td class="pt-1">
-                      <a href="#" class="btn btn-outline-primary"> sửa </a>
-                      <a href="#" class="btn btn-outline-danger"> xóa </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Bánh mì gì đó</td>
-                    <td>Bmì / bagguete</td>
-                    <td>Nướng</td>
-                    <td>2000</td>
-                    <td>Cái</td>
-                    <td class="pt-1">
-                      <a href="#" class="btn btn-outline-primary"> sửa </a>
-                      <a href="#" class="btn btn-outline-danger"> xóa </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Bánh bao 2 trứng muối</td>
-                    <td>Bbao / bánh bao mặn</td>
-                    <td>Hấp</td>
-                    <td>15000</td>
-                    <td>Cái</td>
-                    <td class="pt-1">
-                      <a href="#" class="btn btn-outline-primary"> sửa </a>
-                      <a href="#" class="btn btn-outline-danger"> xóa </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Donut sô cô la</td>
-                    <td>BNgọt / Donut</td>
-                    <td>Chiên</td>
-                    <td>10000</td>
-                    <td>Cái</td>
-                    <td class="pt-1">
-                      <a href="#" class="btn btn-outline-primary"> sửa </a>
-                      <a href="#" class="btn btn-outline-danger"> xóa </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          </div>
+          <div class="gap-xs "></div>
+          <div class="table-responsive-lg">
+            <table class="table table-hover table-striped table-dark">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Tên bánh</th>
+                  <th scope="col">Loại bánh</th>
+                  <th scope="col">Cách chế biến</th>
+                  <th scope="col">Đơn giá</th>
+                  <th scope="col">Đơn vị</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Bánh abc</td>
+                  <td>Bmì / sừng bò</td>
+                  <td>Nướng</td>
+                  <td>20000</td>
+                  <td>Cái</td>
+                  <td class="pt-1">
+                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
+                    <a href="#" class="btn btn-outline-danger"> xóa </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Bánh mì gì đó</td>
+                  <td>Bmì / bagguete</td>
+                  <td>Nướng</td>
+                  <td>2000</td>
+                  <td>Cái</td>
+                  <td class="pt-1">
+                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
+                    <a href="#" class="btn btn-outline-danger"> xóa </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Bánh bao 2 trứng muối</td>
+                  <td>Bbao / bánh bao mặn</td>
+                  <td>Hấp</td>
+                  <td>15000</td>
+                  <td>Cái</td>
+                  <td class="pt-1">
+                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
+                    <a href="#" class="btn btn-outline-danger"> xóa </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Donut sô cô la</td>
+                  <td>BNgọt / Donut</td>
+                  <td>Chiên</td>
+                  <td>10000</td>
+                  <td>Cái</td>
+                  <td class="pt-1">
+                    <a href="./product.html" class="btn btn-outline-primary"> sửa </a>
+                    <a href="#" class="btn btn-outline-danger"> xóa </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
