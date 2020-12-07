@@ -211,3 +211,25 @@
 .mb-md{
     margin-bottom: 40px;
 }
+
+.m-lg{
+    margin: 50px;
+}
+.m-hor-lg{
+    margin: 0 50px;
+}
+.mr-lg{
+    margin-right: 50px;
+}
+.ml-lg{
+    margin-left: 50px;
+}
+.m-ver-lg{
+    margin: 50px 0;
+}
+.mt-lg{
+    margin-top: 50px;
+}
+.mb-lg{
+    margin-bottom: 50px;
+}
