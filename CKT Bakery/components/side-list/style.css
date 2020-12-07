@@ -52,7 +52,7 @@
         color: #444f5e;
     }
 
-    button.active{
+    .side-list-item.active{
         background-color: #2abce7;
         color: #ffffff;
     } 
