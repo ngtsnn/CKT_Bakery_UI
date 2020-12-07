@@ -1,3 +1,5 @@
+window.sessionStorage.setItem("signed", false);
+
 $("#admin-login").on("submit", (event) => {
   event.preventDefault();
   if ($("#username").val() != "admin" || $("#password").val() != "admin") {
