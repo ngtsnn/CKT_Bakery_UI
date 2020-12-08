@@ -60,7 +60,7 @@
                 Thống kê
               </a>
             </li>
-            <li class="nav-item active medium-size">
+            <li class="nav-item medium-size">
               <a href="./products.html" class="nav-link d-block">
                 <i class="fas fa-bread-slice mx-2"></i>
                 Sản phẩm
@@ -78,7 +78,7 @@
                 Đơn hàng
               </a>
             </li>
-            <li class="nav-item medium-size">
+            <li class="nav-item active medium-size">
               <a href="setting.html" class="nav-link d-block">
                 <i class="fas fa-cog mx-2"></i>
                 Cài đặt
@@ -93,11 +93,11 @@
           <div class="gap-xs"></div>
           <div class="c-white row">
             <div class="large-size col-lg-6">
-              <div class="ml-3">SẢN PHẨM</div>
+              <div class="ml-3">Thay đổi thông tin người dùng</div>
             </div>
             <div class="col-lg-6">
               <div class="float-right col-lg-2 clear-fix">
-                <a href="./products.html" class="d-block btn btn-success mt-1">
+                <a href="./dashboard.html" class="d-block btn btn-success mt-1">
                   Lưu
                 </a>
               </div>
@@ -106,79 +106,31 @@
           <div class="gap-xs"></div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-7 input-field mt-2">
-                <form class="bg-dark c-white py-2 pb-4 px-3">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="product-name">Tên bánh</label>
-                      <input type="text" class="form-control" id="product-name" placeholder="Tên bánh">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="origin"> Nguồn gốc </label>
-                      <input type="text" class="form-control" id="origin" placeholder="Nguồn gốc">
+              <div class="col-md-12 input-field mt-2">
+                <form class="bg-dark c-white py-4 pb-4 px-3">
+                  <div class="form-group row">
+                    <label for="username" class="col-sm-2 mt-2">Tên đăng nhập</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="username" placeholder="Tên đăng nhập">
                     </div>
                   </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="unit-price">Đơn giá</label>
-                      <input type="number" class="form-control" id="unit-price" placeholder="Đơn giá" min="1000" step="1000">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="unit"> Đơn vị </label>
-                      <input type="text" class="form-control" id="unit" placeholder="Đơn vị">
+                  <div class="gap-xs"></div>
+                  <div class="form-group row">
+                    <label for="password" class="col-sm-2 mt-2">Mật khẩu</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
                     </div>
                   </div>
-                  <div class="form-row">
-                    <div class="col-lg-12">
-                      <div class="image-upload-container">
-                        <div class="img-upload-title"> Ảnh sản phẩm </div>
-                        <div class="image-upload-border">
-                          <label for="img-upload"> Chọn ảnh ở đây </label>
-                          <div class="img-upload-box">
-                            <input type="file" accept="image/*" id="img-upload" class="img-upload">
-                            <div class="review-image-box d-none" id="review-box">
-                              <img src="" alt="" class="review-img">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-lg-12">
-                      <label for="description"> Mô tả </label>
-                      <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+                  <div class="gap-xs"></div>
+                  <div class="form-group row">
+                    <label for="refill-password" class="col-sm-2 mt-2">Nhập lại mật khẩu</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="refill-password" placeholder="Nhập lại mật khẩu">
                     </div>
                   </div>
                 </form>
               </div>
-              <div class="col-lg-5 relation-field mt-2">
-                <div class="bg-dark c-white py-2 px-3">
-                  <div class="form-row">
-                    <div class="form-group col-lg-6">
-                      <label for="product-type"> Loại bánh </label>
-                      <select name="product-type" id="product-type" class="form-control">
-                        <option value="bmi/sungbo" selected>bmi/sungbo</option>
-                        <option value="bmi/bagguette">bmi/bagguette</option>
-                        <option value="bngot/donut">bngot/donut</option>
-                        <option value="bngot/gato">bngot/gato</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-lg-6">
-                      <label for="cooking-type"> Phương pháp chế biến </label>
-                      <select name="cooking-type" id="cooking-type" class="form-control">
-                        <option value="bmi/sungbo" selected >Hấp</option>
-                        <option value="bmi/bagguette">Luộc</option>
-                        <option value="bngot/donut">Nướng</option>
-                        <option value="bngot/gato">Chiên</option>
-                        <option value="bngot/gato">Sao</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="gap-sm"></div>
           </div>
         </div>
       </div>
