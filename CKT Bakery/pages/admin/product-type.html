@@ -15,6 +15,7 @@
     <!--add your style here-->
     <link rel="stylesheet" href="../../components/side-menu/style.css">
     <link rel="stylesheet" href="../../components/title/style.css">
+    <link rel="stylesheet" href="../../components/image-upload/style.css">
 
     <title>CKT Bakery</title>
   </head>
@@ -60,14 +61,14 @@
                 Thống kê
               </a>
             </li>
-            <li class="nav-item active medium-size">
+            <li class="nav-item medium-size">
               <a href="./products.html" class="nav-link d-block">
                 <i class="fas fa-bread-slice mx-2"></i>
                 Sản phẩm
               </a>
             </li>
-            <li class="nav-item medium-size">
-              <a href="#" class="nav-link d-block">
+            <li class="nav-item active medium-size">
+              <a href="./categories.html" class="nav-link d-block">
                 <i class="fas fa-clipboard-list mx-2"></i>
                 Danh mục
               </a>
@@ -92,93 +93,42 @@
         <div class="container">
           <div class="gap-xs"></div>
           <div class="c-white row">
-            <div class="large-size col-lg-3">
-              SẢN PHẨM
+            <div class="large-size col-lg-6">
+              <div class="ml-3">TÊN LOẠI BÁNH</div>
             </div>
-            <div class="col-lg-3">
-              <input type="search" placeholder="tìm kiếm" class="mt-2 py-1 pl-2 border-0" style="border-radius: 18px; outline:none;">
-            </div>
-            <div class="col-lg-3">
-              <div class="sort-by row bg-dark overflow-hidden my-2 ml-1">
-                <label for="sort-by-item-1" style="color: white;"> Sắp xếp theo: </label>
-                <select name="sort-by-toggle" class="sort-by-item bg-dark" id="sort-by-item-1" style="color: white; width: 85px;">
-                  <option value="id"> ID </option>
-                  <option value="Tên bánh"> Tên bánh </option>
-                  <option value="Đơn giá"> Đơn giá </option>
-                </select>
+            <div class="col-lg-6">
+              <div class="float-right col-lg-2 clear-fix">
+                <a href="./categories.html" class="d-block btn btn-success mt-1">
+                  Lưu
+                </a>
               </div>
             </div>
-            <div class="col-lg-3">
-              <a href="./product.html" class="d-block btn btn-primary mt-1 add">
-                + Thêm bản ghi 
-              </a>
-            </div>
           </div>
-          <div class="gap-xs "></div>
-          <div class="table-responsive-lg">
-            <table class="table table-hover table-striped table-dark">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Tên bánh</th>
-                  <th scope="col">Loại bánh</th>
-                  <th scope="col">Cách chế biến</th>
-                  <th scope="col">Đơn giá</th>
-                  <th scope="col">Đơn vị</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Bánh abc</td>
-                  <td>Bmì / sừng bò</td>
-                  <td>Nướng</td>
-                  <td>20000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary edit"> sửa </a>
-                    <button class="btn btn-outline-danger delete"> xóa </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Bánh mì gì đó</td>
-                  <td>Bmì / bagguete</td>
-                  <td>Nướng</td>
-                  <td>2000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary edit"> sửa </a>
-                    <button class="btn btn-outline-danger delete"> xóa </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Bánh bao 2 trứng muối</td>
-                  <td>Bbao / bánh bao mặn</td>
-                  <td>Hấp</td>
-                  <td>15000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary edit"> sửa </a>
-                    <button class="btn btn-outline-danger delete"> xóa </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Donut sô cô la</td>
-                  <td>BNgọt / Donut</td>
-                  <td>Chiên</td>
-                  <td>10000</td>
-                  <td>Cái</td>
-                  <td class="pt-1">
-                    <a href="./product.html" class="btn btn-outline-primary edit"> sửa </a>
-                    <button class="btn btn-outline-danger delete"> xóa </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="gap-xs"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 input-field mt-2">
+                <form class="bg-dark c-white py-2 pb-4 px-3">
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="product-type">Tên loại bánh</label>
+                      <input type="text" class="form-control" id="product-type" placeholder="Tên loại bánh">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="main-type"> Tên loại bánh chính </label>
+                      <input type="text" class="form-control" id="main-type" placeholder="Tên loại bánh chính">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="sub-type"> Tên loại bánh phụ </label>
+                      <input type="text" class="form-control" id="sub-type" placeholder="Tên loại bánh phụ" min="1000" step="1000">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="gap-sm"></div>
           </div>
         </div>
       </div>
@@ -192,7 +142,7 @@
     <!--import your js here-->
     <script src="../../components/side-menu/script.js"></script>
     <script src="../../components/pushback-login/script.js"></script>
-    <script src="../../components/edit-mode/script.js"></script>
+    <script src="../../components/image-upload/script.js"></script>
 
   </body>
 </html>
