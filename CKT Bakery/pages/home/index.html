@@ -37,10 +37,10 @@
         <img src="../../images/logos/logo_small.png" alt="CKT Bakery" />
       </a>
       <span class="heading-right">
-        <button class=" mr-sm c-yellow loginbtn" onclick="openform()">
+        <button class=" mr-2 c-yellow loginbtn" onclick="openform()">
           <i class="fa-2x far fa-user"></i>
         </button>
-        <div class="form-popup col-lg-6" id="myForm">
+        <div class="form-popup is-login col-lg-6" id="myForm">
           <div class="btn-group">
             <button id="login-side-btn" class="active">
               Đăng Nhập
@@ -56,20 +56,19 @@
             <div class="login active" id="login-side">
               <form>
                 <div class="form-group row">
-                  <label for="inputEmail0" class="col-sm-2 col-form-label">Tài khoản</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail0" placeholder="tài khoản">
+                  <div class="col-12">
+                    <label for="username" class="col-form-label"> Tên đăng nhập </label>
+                    <input type="text" class="form-control" id="username" placeholder=" Tên đăng nhập" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Mật khẩu</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="mật khẩu">
+                  <div class="col-12">
+                    <label for="inputPassword3" class="col-form-label">Mật khẩu</label>
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Mật khẩu" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <div class="col-sm-2"></div>
-                  <div class="col-sm-10">
+                  <div class="col-12">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="gridCheck1">
                       <label class="form-check-label" for="gridCheck1">
@@ -79,7 +78,7 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <div class="col-sm-10">
+                  <div class="col-sm-12">
                     <button type="submit" class="btn btn-primary">Đăng nhập</button>
                   </div>
                 </div>
@@ -88,33 +87,34 @@
             <div class="signup" id="signup-side">
               <form>
                 <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Tài khoản</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="tài khoản">
+                  <div class="col-12">
+                    <label for="username" class="col-form-label"> Tên đăng nhập </label>
+                    <input type="text" class="form-control" id="username" placeholder=" Tên đăng nhập" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputPassword4" class="col-sm-2 col-form-label">Mật khẩu</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="mật khẩu">
+                  <div class="col-12">
+                    <label for="password" class="col-form-label">Mật khẩu</label>
+                  <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputPassword5" class="col-sm-2 col-form-label">Nhập lại Mật khẩu</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword5" placeholder="nhập lại mật khẩu">
+                  <div class="col-12">
+                    <label for="refill-password" class="col-form-label">Nhập lại mật khẩu</label>
+                  <input type="password" class="form-control" id="refill-password" placeholder="Nhập lại mật khẩu" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">Đăng kí</button>
+                  <div class="col-sm-12">
+                    <div class="gap-xs"></div>
+                    <button type="submit" class="btn btn-primary">Đăng kí</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <a class="fa-2x mr-sm c-yellow" href="#">
+        <a class="fa-2x mr-3 c-yellow" href="#">
           <i class="fas fa-shopping-cart"></i>
         </a>
       </span>
