@@ -98,6 +98,8 @@
     color: #444f5e;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    cursor: pointer;
 }
 
 .see-more-contain{

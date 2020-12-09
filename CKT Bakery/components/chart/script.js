@@ -25,7 +25,7 @@ const GenerateRandomData = () => {
 
 console.log(GenerateRandomData())
 
-const DrawChart = () => {
+const DrawChart = (data) => {
   var ctx = document.getElementById("income-chart");
   var myChart = new Chart(ctx, {
     type: "bar",
@@ -34,7 +34,7 @@ const DrawChart = () => {
       datasets: [
         {
           label: "Doanh thu",
-          data: GenerateRandomData(),
+          data: data,
           backgroundColor: GenerateRandomColors(),
         },
       ],
@@ -53,5 +53,5 @@ const DrawChart = () => {
   });
 };
 
-GenerateRandomColors();
-DrawChart();
+DrawChart(GenerateRandomData());
+
