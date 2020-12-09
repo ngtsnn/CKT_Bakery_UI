@@ -24,7 +24,7 @@ $(".sort-by-item").each(function (index, sortToggler) {
     }
 
     let dataQuantity = sortData.length;
-    if($("tbody")[index].getAttribute("hasSumary") == "true"){
+    if($("tbody")[index].getAttribute("has-sumary") == "true"){
       dataQuantity--;
     }
 

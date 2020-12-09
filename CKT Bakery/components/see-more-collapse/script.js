@@ -20,10 +20,8 @@ see_moreBtns.forEach(see_moreBtn => {
         see_moreBtn.children[0].classList.toggle('d-none');
         see_moreBtn.children[1].classList.toggle('d-none');
 
-        for(var i = 0; i < data.length; i++){
-            if (i >= quantityShow){
-                data[i].classList.toggle('d-none');
-            }
+        for(var i = quantityShow; i < data.length; i++){
+            data[i].classList.toggle('d-none');
         }
     });
 })

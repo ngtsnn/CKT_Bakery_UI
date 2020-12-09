@@ -259,10 +259,10 @@
           </li>
           <li class="ml-lg-5">
             <p>Giá</p>
-            <div class="range-slider">
+            <div class="range-slider" id="double-range-slider" data-target="#post-1">
               <span class="rangeValues"></span>
-              <input value="500" min="1000" max="200000" step="500" type="range">
-              <input value="50000" min="1000" max="200000" step="500" type="range">
+              <input value="1000" min="1000" max="200000" step="1000" type="range">
+              <input value="150000" min="1000" max="200000" step="1000" type="range">
             </div>
            
           </li>
@@ -275,12 +275,10 @@
         </div>
         <div class="col-lg-6 ml-lg-0 ml-xs-3">
           <div class="sort-by float-lg-right row">
-            <label for="sort-by-items"> Sắp xếp theo: </label>
-            <select name="sort-by-toggle" class="sort-by-item" id="sort-by-items">
-              <option value="Mới nhất">Mới nhất</option>
-              <option value="Cũ nhất">Cũ nhất</option>
-              <option value="Xem nhiều nhất">Xem nhiều nhất</option>
-              <option value="alphbetic">alphbetic</option>
+            <label for="sort-by-item-1"> Sắp xếp theo: </label>
+            <select name="sort-by-toggle" class="sort-by-item" id="sort-by-item-1" data-target="#post-1">
+              <option value="unit-price"> Đơn giá </option>
+              <option value="product-name"> Tên bánh </option>
             </select>
           </div>
         </div>
@@ -329,7 +327,7 @@
         </div>
       </div>
       <!--sản phẩm đưa ra-->
-      <div class="row">
+      <div class="row collapse-post" id="post-1">
         <div class="col-sm-12 col-md-5 col-xl-4 my-3">
           <div class="card bg-w">
             <div class="card-header">
@@ -337,10 +335,10 @@
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì d
               </h3>
               <div class="unit-price">
-                15.000
+                29.000
               </div>
             </div>
 
@@ -365,14 +363,14 @@
         <div class="col-sm-12 col-md-5 col-xl-4 my-3">
           <div class="card bg-w">
             <div class="card-header">
-              <img src="../../images/hot-deals/hinh1.jpg" alt="gido" />
+              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì e
               </h3>
               <div class="unit-price">
-                15.000
+                18.000
               </div>
             </div>
 
@@ -397,14 +395,14 @@
         <div class="col-sm-12 col-md-5 col-xl-4 my-3">
           <div class="card bg-w">
             <div class="card-header">
-              <img src="../../images/hot-deals/hinh1.jpg" alt="gido" />
+              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì x
               </h3>
               <div class="unit-price">
-                15.000
+                12.000
               </div>
             </div>
 
@@ -429,14 +427,46 @@
         <div class="col-sm-12 col-md-5 col-xl-4 my-3">
           <div class="card bg-w">
             <div class="card-header">
-              <img src="../../images/hot-deals/hinh1.jpg" alt="gido" />
+              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì p
               </h3>
               <div class="unit-price">
-                15.000
+                90.000
+              </div>
+            </div>
+
+            <div class="card-footer bg-w">
+              <div class="icons">
+                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                  <i class="fas fa-hand-point-up"></i>
+                </a>
+
+                <a href="#" class="fa-3x mx-1" title="xem trước">
+                  <i class="far fa-eye"></i>
+                </a>
+
+                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-5 col-xl-4 my-3">
+          <div class="card bg-w">
+            <div class="card-header">
+              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
+            </div>
+            <div class="card-body">
+              <h3 class="product-name">
+                Bánh mì xyz
+              </h3>
+              <div class="unit-price">
+                11.000
               </div>
             </div>
 
@@ -497,7 +527,39 @@
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì abc
+              </h3>
+              <div class="unit-price">
+                5.000
+              </div>
+            </div>
+
+            <div class="card-footer bg-w">
+              <div class="icons">
+                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                  <i class="fas fa-hand-point-up"></i>
+                </a>
+
+                <a href="#" class="fa-3x mx-1" title="xem trước">
+                  <i class="far fa-eye"></i>
+                </a>
+
+                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-5 col-xl-4 my-3">
+          <div class="card bg-w">
+            <div class="card-header">
+              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
+            </div>
+            <div class="card-body">
+              <h3 class="product-name">
+                Bánh mì heo quay
               </h3>
               <div class="unit-price">
                 15.000
@@ -529,10 +591,10 @@
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì cas
               </h3>
               <div class="unit-price">
-                15.000
+                25.000
               </div>
             </div>
 
@@ -561,10 +623,10 @@
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì xas xius
               </h3>
               <div class="unit-price">
-                15.000
+                49.000
               </div>
             </div>
 
@@ -593,10 +655,10 @@
             </div>
             <div class="card-body">
               <h3 class="product-name">
-                Bánh mì gì đó
+                Bánh mì i don't know
               </h3>
               <div class="unit-price">
-                15.000
+                150.000
               </div>
             </div>
 
@@ -617,6 +679,71 @@
             </div>
           </div>
         </div>
+
+        <div class="col-sm-12 col-md-5 col-xl-4 my-3">
+          <div class="card bg-w">
+            <div class="card-header">
+              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
+            </div>
+            <div class="card-body">
+              <h3 class="product-name">
+                Bánh mì HN
+              </h3>
+              <div class="unit-price">
+                25.000
+              </div>
+            </div>
+
+            <div class="card-footer bg-w">
+              <div class="icons">
+                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                  <i class="fas fa-hand-point-up"></i>
+                </a>
+
+                <a href="#" class="fa-3x mx-1" title="xem trước">
+                  <i class="far fa-eye"></i>
+                </a>
+
+                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-5 col-xl-4 my-3">
+          <div class="card bg-w">
+            <div class="card-header">
+              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
+            </div>
+            <div class="card-body">
+              <h3 class="product-name">
+                Bánh mì kem
+              </h3>
+              <div class="unit-price">
+                8.000
+              </div>
+            </div>
+
+            <div class="card-footer bg-w">
+              <div class="icons">
+                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                  <i class="fas fa-hand-point-up"></i>
+                </a>
+
+                <a href="#" class="fa-3x mx-1" title="xem trước">
+                  <i class="far fa-eye"></i>
+                </a>
+
+                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="gap-lg"></div>
     </div>
@@ -741,6 +868,7 @@
   <script src="../../components/popup-form/script.js"></script>
   <script src="../../components/signup-signin/script.js"></script>
   <script src="../../components/double-slider-input/script.js"></script>
+  <script src="../../components/sort-cards/script.js"></script>
 </body>
 
 </html>

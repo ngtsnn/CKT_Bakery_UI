@@ -67,7 +67,7 @@ body{
 
 .login-form .input-group input[type='text']:focus ~ label::after,
 .login-form .input-group input[type='password']:focus ~ label::after{
-    content: ('*');
+    content: '*';
 }
 
 .login-form .input-group input[type='text']:valid ~ label,

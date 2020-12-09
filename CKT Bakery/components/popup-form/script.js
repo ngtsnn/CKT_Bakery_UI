@@ -1,7 +1,7 @@
 function openform() {
-    document.getElementById("myForm").style.display = "block";
+    $("#myForm").fadeIn(500);
 }
   
 function closeform() {
-    document.getElementById("myForm").style.display = "none";
+    $("#myForm").fadeOut(500);
 }
