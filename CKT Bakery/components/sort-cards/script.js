@@ -42,7 +42,7 @@ if($("#double-range-slider")[0]){
         }
       }
       else{
-        if(!d.classList.contains("d-none")){
+        if(d.classList.contains("d-none")){
           d.classList.remove("d-none");
         }
       }
