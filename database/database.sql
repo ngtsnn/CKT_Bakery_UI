@@ -36,6 +36,7 @@ create table PRODUCT (
 	origin nvarchar(100),
 	unitPrice decimal(15 , 2 ) not null,
 	unit nvarchar(100) not null,
+	description nvarchar(255) not null,
 	constraint frg_cooking_type foreign key (cookingTypeID)
 		references COOKING_TYPE (cookingTypeID),
 	constraint frg_product_type foreign key (productTypeID)
