@@ -277,7 +277,7 @@ label {
     }
 }
 
-/* ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
@@ -288,7 +288,7 @@ label {
 
 ::-webkit-scrollbar-thumb {
     background-color: #f8f7f7;
-} */
+}
 
 input.larger {
     transform: scale(2);
