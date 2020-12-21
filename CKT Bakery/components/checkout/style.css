@@ -1,21 +1,6 @@
-body {
-    font-family: Arial;
-    font-size: 17px;
-    padding: 8px;
-}
-
 h4 {
     text-align: center;
     padding-top: 20px;
-}
-
-.row {
-    display: -ms-flex-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 -16px;
-    padding: 20px;
 }
 
 .col-30 {
@@ -104,7 +89,7 @@ hr {
     content: " VND";
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .row {
         flex-direction: column-reverse;
     }
