@@ -5,6 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Twiters Open Graph -->
+  <meta name="twitter:card" content="summary"> 
+  <meta property="twitter:title" content="VVVBakery"> 
+  <meta name="twitter:image" content="http://cktbakery.ihostfull.com/images/logos/logo_small.png"> 
+  <meta property="twitter:description" content="Chúng tôi là VVVBakery, mọi loại bánh đều đem đến cho bạn một vị lạ thường cuốn hút. Chúc bạn ngon miệng!">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi">
+  <meta property="og:title" content="VVV&amp;Bakery">
+  <meta property="og:description" content="Chúng tôi là VVVBakery, mọi loại bánh đều đem đến cho bạn một vị lạ thường cuốn hút. Chúc bạn ngon miệng!">
+  <meta property="og:url" content="http://cktbakery.ihostfull.com/pages/home/">
+  <meta property="og:image" content=" http://cktbakery.ihostfull.com/images/logos/logo_small.png">
+
+  <!-- Geo meta -->
+  <meta name="geo.region" content="VN" />
+  <meta name="geo.placename" content="Ho Chi Minh City" />
+  <meta name="geo.position" content="10.736579;106.705479" />
+  <meta name="ICBM" content="10.736579, 106.705479" />
+  
+
   <!--import form another css source-->
   <!--must reset first-->
   <link rel="stylesheet" href="../../asset/reset.css" />
@@ -25,7 +46,7 @@
   <link rel="stylesheet" href="../../components/button-icon-link/style.css" />
   <link rel="stylesheet" href="../../components/see-more-collapse/style.css" />
 
-  <title>CKT Bakery</title>
+  <title>VVV Bakery</title>
 </head>
 
 <body class="bg-d">
@@ -34,7 +55,7 @@
   <div class="header bg-w">
     <div class="heading-bar">
       <a href="../home/index.html" class="logo">
-        <img src="../../images/logos/logo_small.png" alt="CKT Bakery" />
+        <img src="../../images/logos/logo_small.png" alt="VVV Bakery" />
       </a>
       <span class="heading-right">
         <button class=" mr-2 c-yellow loginbtn" onclick="openform()">
@@ -121,7 +142,7 @@
     </div>
     <div class="menu-bar">
       <nav class="navbar navbar-expand-lg navbar-light bg-l">
-        <div class="large-size c-yellow mr-md">CKT Bakery</div>
+        <div class="large-size c-yellow mr-md">VVV Bakery</div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -166,15 +187,15 @@
                 Bánh mặn
               </a>
               <div class="dropdown-menu" aria-labelledby="salty-products">
-                <a class="dropdown-item" href="#">Bánh mì mặn</a>
-                <a class="dropdown-item" href="#">Bánh Tart</a>
-                <a class="dropdown-item" href="#">Bánh Pizza</a>
+                <a class="dropdown-item" href="./products.html">Bánh mì mặn</a>
+                <a class="dropdown-item" href="./products.html">Bánh Tart</a>
+                <a class="dropdown-item" href="./products.html">Bánh Pizza</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="./products.html">Xem thêm</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Liên Hệ & Hợp Tác</a>
+              <a class="nav-link" href="mailto:vvvbakeryloveu@gmail.com" tabindex="-1" aria-disabled="true">Liên Hệ & Hợp Tác</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -264,15 +285,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -296,15 +317,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -328,15 +349,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -360,15 +381,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -392,15 +413,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -424,15 +445,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -456,15 +477,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -488,15 +509,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -520,15 +541,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -552,15 +573,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -584,15 +605,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -616,15 +637,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -648,15 +669,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -721,15 +742,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -753,15 +774,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -785,15 +806,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -817,15 +838,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -849,15 +870,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -881,15 +902,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -913,15 +934,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -945,15 +966,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -977,15 +998,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -1009,15 +1030,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -1041,15 +1062,15 @@
 
             <div class="card-footer bg-w">
               <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
+                <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
                   <i class="fas fa-hand-point-up"></i>
                 </a>
 
-                <a href="#" class="fa-3x mx-1" title="xem trước">
+                <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
                   <i class="far fa-eye"></i>
                 </a>
 
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                <a href="javascript:void(0)" class="fa-3x mx-1" title="thêm vào giỏ hàng">
                   <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
                 </a>
               </div>
@@ -1078,7 +1099,7 @@
     <div class="gap-lg"></div>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Chúng tôi là CKT Bakery</h1>
+        <h1 class="display-4">Chúng tôi là VVV Bakery</h1>
         <a href="#"><img src="#" alt="Ảnh nhóm"></a>
         <p class="lead">Ngày xưa chúng tôi học công nghệ thông tin cơ. Nhưng sau đó số phận đưa đẩy chúng tôi đi bán
           bánh mì. Bán xe đẩy lề đường chán quá nên chúng tôi mở hẳn tiệm bánh cho nó sang. Bánh đây ăn ngon lắm nha mại
@@ -1092,7 +1113,7 @@
     <div class="container-fluid text-center text-md-left">
       <div class="row">
         <div class="col-md-3 mt-md-0 mt-3">
-          <h5 class="text-uppercase">CKT Bakery</h5>
+          <h5 class="text-uppercase">VVV Bakery</h5>
           <div class="small-size">
             Nhận thông báo từ chúng tôi
           </div>
@@ -1106,10 +1127,10 @@
           </div>
           <hr>
           <div>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-facebook"></i></a>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-youtube"></i></a>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://facebook.com/ng.neko.592"><i class="fab fa-2x fa-facebook"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://youtube.com"><i class="fab fa-2x fa-youtube"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://www.twitter.com/"><i class="fab fa-2x fa-twitter-square"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://www.instagram.com/anh_tu._/"><i class="fab fa-2x fa-instagram"></i></a>
           </div>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3" />
@@ -1127,7 +1148,7 @@
               <a href="#">Tổng quan</a>
             </li>
             <li>
-              <a href="#">Bản đồ</a>
+              <a href="https://www.google.com/maps/place/7+%C4%90.+s%E1%BB%91+66,+T%C3%A2n+Phong,+Qu%E1%BA%ADn+7,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7368395,106.7038752,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f9a2c0d2115:0x1559489db04f5c7b!8m2!3d10.7368395!4d106.7060639?hl=vi-VN">Bản đồ</a>
             </li>
           </ul>
         </div>
@@ -1136,16 +1157,13 @@
           <h5 class="text-uppercase">Tài khoản của tôi</h5>
           <ul class="list-unstyled">
             <li>
-              <a href="#">Đăng nhập</a>
+              <a href="javascript:void(0)" onclick="openform()">Đăng nhập</a>
             </li>
             <li>
-              <a href="#">Tạo tài khoản</a>
+              <a href="javascript:void(0)" onclick="openform()">Tạo tài khoản</a>
             </li>
             <li>
-              <a href="#">Đặt hàng</a>
-            </li>
-            <li>
-              <a href="#">Giỏ hàng</a>
+              <a href="cart.html">Giỏ hàng</a>
             </li>
             <li>
               <a href="#">Chỉnh sửa thông tin</a>
@@ -1179,7 +1197,7 @@
             </li>
             <li>
               <div class="small-size mail">
-                <a href="mail:tusocnau@gmail.com"> ctkbakeryloveu.@gmail.com </a>
+                <a href="mailto:vvvbakeryloveu@gmail.com"> vvvbakeryloveu@gmail.com </a>
               </div>
             </li>
           </ul>
@@ -1191,7 +1209,7 @@
 
     <div class="footer-copyright text-center py-3">
       © 2020 Copyright:
-      <a href="#"> ctkbakeryloveu.com</a>
+      <a href="mailto:vvvbakeryloveu@gmail.com"> vvvbakeryloveu@gmail.com</a>
     </div>
 
   </footer>
