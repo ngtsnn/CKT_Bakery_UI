@@ -5,6 +5,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Twiters Open Graph -->
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="VVVBakery">
+  <meta name="twitter:image" content="http://cktbakery.ihostfull.com/images/logos/logo_small.png">
+  <meta property="twitter:description" content="Chúng tôi là VVVBakery, mọi loại bánh đều đem đến cho bạn một vị lạ thường cuốn hút. Chúc bạn ngon miệng!">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi">
+  <meta property="og:title" content="VVV&amp;Bakery">
+  <meta property="og:description" content="Chúng tôi là VVVBakery, mọi loại bánh đều đem đến cho bạn một vị lạ thường cuốn hút. Chúc bạn ngon miệng!">
+  <meta property="og:url" content="http://cktbakery.ihostfull.com/pages/home/">
+  <meta property="og:image" content=" http://cktbakery.ihostfull.com/images/logos/logo_small.png">
+
+  <!-- Geo meta -->
+  <meta name="geo.region" content="VN" />
+  <meta name="geo.placename" content="Ho Chi Minh City" />
+  <meta name="geo.position" content="10.736579;106.705479" />
+  <meta name="ICBM" content="10.736579, 106.705479" />
+
   <!--import form another css source-->
   <!--must reset first-->
   <link rel="stylesheet" href="../../asset/reset.css" />
@@ -30,559 +50,538 @@
 </head>
 
 <body class="bg-d">
-  <!--header-->
-  <div class="header bg-w">
-    <div class="heading-bar">
+<!--header-->
+<div class="header bg-w">
+  <div class="heading-bar">
       <a href="../home/index.html" class="logo">
-        <img src="../../images/logos/logo_small.png" alt="CKT Bakery" />
+          <img src="../../images/logos/logo_small.png" alt="VVV Bakery" />
       </a>
       <span class="heading-right">
-        <button class="mr-sm c-yellow loginbtn" onclick="openform()">
-          <i class="fa-2x far fa-user"></i>
-        </button>
-        <div class="form-popup col-lg-6" id="myForm">
-          <div class="btn-group">
-            <button id="login-side-btn" class="active">Đăng Nhập</button>
-            <button id="signup-side-btn">Đăng Kí</button>
-            <button type="button" class="btn-cancel" onclick="closeform()">
-              <i class="fas fa-sign-out-alt"></i>
-            </button>
-          </div>
-          <div class="l-s-forms">
-            <div class="login active" id="login-side">
-              <form>
-                <div class="form-group row">
-                  <label for="inputEmail0" class="col-sm-2 col-form-label">Tài khoản</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail0" placeholder="tài khoản" />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Mật khẩu</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="mật khẩu" />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-2"></div>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck1" />
-                      <label class="form-check-label" for="gridCheck1">
-                        Nhớ mật khẩu
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">
-                      Đăng nhập
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="signup" id="signup-side">
-              <form>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Tài khoản</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="tài khoản" />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword4" class="col-sm-2 col-form-label">Mật khẩu</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="mật khẩu" />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword5" class="col-sm-2 col-form-label">Nhập lại Mật khẩu</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword5"
-                      placeholder="nhập lại mật khẩu" />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">
-                      Đăng kí
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <a class="fa-2x mr-sm c-yellow" href="#">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-      </span>
+  <button class="mr-sm c-yellow loginbtn" onclick="openform()">
+    <i class="fa-2x far fa-user"></i>
+  </button>
+  <div class="form-popup col-lg-6" id="myForm">
+    <div class="btn-group">
+      <button id="login-side-btn" class="active">Đăng Nhập</button>
+      <button id="signup-side-btn">Đăng Kí</button>
+      <button type="button" class="btn-cancel" onclick="closeform()">
+        <i class="fas fa-sign-out-alt"></i>
+      </button>
     </div>
-    <div class="menu-bar">
-      <nav class="navbar navbar-expand-lg navbar-light bg-l">
-        <div class="large-size c-yellow mr-md">CKT Bakery</div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto pt-xs">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="sweet-products" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Sản Phẩm
-              </a>
-              <div class="dropdown-menu" aria-labelledby="sweet-products">
-                <a class="dropdown-item" href="#">Bánh Mì Ngọt</a>
-                <a class="dropdown-item" href="#">Bánh Mì Chay</a>
-                <a class="dropdown-item" href="#">Bánh Donus</a>
-                <a class="dropdown-item" href="#">Bánh Kemt</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Xem thêm</a>
+    <div class="l-s-forms">
+      <div class="login active" id="login-side">
+        <form>
+          <div class="form-group row">
+            <label for="inputEmail0" class="col-sm-2 col-form-label">Tài khoản</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail0" placeholder="tài khoản" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Mật khẩu</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="mật khẩu" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" />
+                <label class="form-check-label" for="gridCheck1">
+                  Nhớ mật khẩu
+                </label>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="sweet-products" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Bánh ngọt
-              </a>
-              <div class="dropdown-menu" aria-labelledby="sweet-products">
-                <a class="dropdown-item" href="#">Bánh Pudding</a>
-                <a class="dropdown-item" href="#">Bánh kem</a>
-                <a class="dropdown-item" href="#">Bánh Donus</a>
-                <a class="dropdown-item" href="#">Bánh mì bơ sữa</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="salty-products" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Bánh mặn
-              </a>
-              <div class="dropdown-menu" aria-labelledby="salty-products">
-                <a class="dropdown-item" href="#">Bánh mì mặn</a>
-                <a class="dropdown-item" href="#">Bánh Tart</a>
-                <a class="dropdown-item" href="#">Bánh Pizza</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Liên Hệ & Hợp Tác</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-        </div>
-      </nav>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary">
+                Đăng nhập
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="signup" id="signup-side">
+        <form>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Tài khoản</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="tài khoản" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword4" class="col-sm-2 col-form-label">Mật khẩu</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="mật khẩu" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword5" class="col-sm-2 col-form-label">Nhập lại Mật khẩu</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword5"
+                placeholder="nhập lại mật khẩu" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary">
+                Đăng kí
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
-  <!--back to top -->
-  <button onclick="topFunction()" id="to-top">
-    <i class="fas fa-2x fa-chevron-up"></i>
+  <a class="fa-2x mr-sm c-yellow" href="checkout.html">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</span>
+  </div>
+  <div class="menu-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-l">
+          <div class="large-size c-yellow mr-md">VVV Bakery</div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="gap-xs"></div>
-
-  <div class="breadcrumb-section">
-    <div class="gap-xs"></div>
-    <div class="container">
-      <ul class="my-breadcrumb">
-        <li class="my-breadcrumb-item">
-          <a href="../home/index.html"> Trang chủ </a>
-        </li>
-        <li class="my-breadcrumb-item">
-          <a href="../home/index.html"> Sản phẩm </a>
-        </li>
-        <li class="my-breadcrumb-item active">Bánh mì Sài Gòn</li>
-      </ul>
-    </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto pt-xs">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="products.html" id="sweet-products" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản Phẩm</a>
+                      <div class="dropdown-menu" aria-labelledby="sweet-products">
+                        <a class="dropdown-item" href="./products.html">Bánh Mì Ngọt</a>
+                        <a class="dropdown-item" href="./products.html">Bánh Mì Chay</a>
+                        <a class="dropdown-item" href="./products.html">Bánh Donus</a>
+                        <a class="dropdown-item" href="./products.html">Bánh Kemt</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./products.html">Xem thêm</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./products.html" id="sweet-products" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bánh ngọt</a>
+                    <div class="dropdown-menu" aria-labelledby="sweet-products">
+                      <a class="dropdown-item" href="./products.html">Bánh Pudding</a>
+                      <a class="dropdown-item" href="./products.html">Bánh kem</a>
+                      <a class="dropdown-item" href="./products.html">Bánh Donus</a>
+                      <a class="dropdown-item" href="./products.html">Bánh mì bơ sữa</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="./products.html">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="mailto:vvvbakeryloveu@gmail.com" id="salty-products" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bánh mặn</a>
+                    <div class="dropdown-menu" aria-labelledby="salty-products">
+                      <a class="dropdown-item" href="./products.html">Bánh mì mặn</a>
+                      <a class="dropdown-item" href="./products.html">Bánh Tart</a>
+                      <a class="dropdown-item" href="./products.html">Bánh Pizza</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="./products.html">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mailto:vvvbakeryloveu@gmail.com" tabindex="-1" aria-disabled="true">Liên Hệ & Hợp Tác</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+          </div>
+      </nav>
   </div>
+</div>
 
-  <div class="products-section">
-    <div class="container">
-      <div class="gap-xs"></div>
-      <div class="product-title">
+<!--back to top -->
+<button onclick="topFunction()" id="to-top">
+<i class="fas fa-2x fa-chevron-up"></i>
+</button>
+
+<div class="gap-xs"></div>
+
+<div class="breadcrumb-section">
+  <div class="gap-xs"></div>
+  <div class="container">
+      <ul class="my-breadcrumb">
+          <li class="my-breadcrumb-item">
+              <a href="../home/index.html"> Trang chủ </a>
+          </li>
+          <li class="my-breadcrumb-item">
+              <a href="../home/index.html"> Sản phẩm </a>
+          </li>
+          <li class="my-breadcrumb-item active">Bánh mì Sài Gòn</li>
+      </ul>
+  </div>
+</div>
+
+<div class="products-section">
+  <div class="container">
+    <div class="gap-xs"></div>
+    <div class="product-title">
         <h1 class="product-title__h1">Bánh mì Sài Gòn</h1>
-      </div>
+    </div>
 
-      <div class="product-block mt-sm mb-lg">
-        <div class="row">
+    <div class="product-block mt-sm mb-lg">
+      <div class="row">
           <div class="col-lg-5">
-            <a href="" title="Bánh mì Sài Gòn">
-              <div class="product-img">
-                <img src="../../images/banhngot/banh-mi-sg.jpg" alt="puta_bread" class="puta_bread" />
-              </div>
-            </a>
+              <a href="" title="Bánh mì Sài Gòn">
+                  <div class="product-img">
+                      <img src="../../images/banhngot/banh-mi-sg.jpg" alt="puta_bread" class="puta_bread" />
+                  </div>
+              </a>
           </div>
           <div class="col-lg-3">
-            <form class="product-form" action="#">
-              <div class="product-discounted-price">15.000 vnd</div>
-              <div class="product-rating">
-                <div class="product-rating-content d-flex">
-                  <div class="product-rating__stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                  <div class="product-rating__code ml-3">
-                    <label for="product-code">CODE:
-                      <span id="product-code" class="font-weight-bold">9420</span></label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="quantity">
-                <div class="text-quantity">Số lượng</div>
-                <a class="btn-desc">
-                  <img src="../../images/icons/iconSub.png" alt="" class="icon-sub" />
-                </a>
-                <input type="number" class="counter" value="1" />
-                <a class="btn-inc">
-                  <img src="../../images/icons/iconAdd.png" alt="" class="icon-add" />
-                </a>
-              </div>
-              <div class="add-to-card">
-                <a href="#" class="text-decoration-none">
-                  <div class="text-add-to-card">THÊM VÀO GIỎ HÀNG</div>
-                </a>
-              </div>
-              <div class="wish-list">
-                <div class="buy-1-click text-decoration-none">
-                  <div class="icon-buy-1-click">
-                    <i class="fas fa-hand-point-up"></i>
-                  </div>
-                  <div class="text-buy-1-click" data-target="#form" data-toggle="modal" style="cursor: pointer">
-                    MUA NGAY VỚI 1-CLICK
-                  </div>
-
-                  <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header border-bottom-0">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Tiến hành đặt hàng
-                          </h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <form>
-                          <div class="modal-body">
-                            <div class="form-group pl-0">
-                              <label for="email1">Họ và tên</label>
-                              <input type="text" class="form-control w-100" id="email1" aria-describedby="emailHelp" />
-                              <small id="emailHelp" class="form-text text-muted"></small>
-                            </div>
-                            <div class="form-group pl-0">
-                              <label for="password1">Số điện thoại</label>
-                              <input type="number" class="form-control w-100" id="password1" />
-                            </div>
-                            <div class="form-group pl-0">
-                              <label for="password1">Địa chỉ</label>
-                              <input type="text" class="form-control w-100" id="password2" />
-                            </div>
-                          </div>
-                          <div class="modal-footer border-top-0 d-flex justify-content-center">
-                            <button type="submit" class="btn rounded-50" id="btn-buynow" style="
-                                  background-color: #e6b400;
-                                  color: #8b6300;
-                                  font-weight: 500;
-                                ">
-                              Đặt hàng
-                            </button>
-                          </div>
-                        </form>
+              <form class="product-form" action="checkout.html">
+                  <div class="product-discounted-price">15.000 vnd</div>
+                  <div class="product-rating">
+                    <div class="product-rating-content d-flex">
+                      <div class="product-rating__stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="product-rating__code ml-3">
+                        <label for="product-code">CODE:
+                          <span id="product-code" class="font-weight-bold">9420</span>
+                        </label>
                       </div>
                     </div>
                   </div>
-                </div>
-                <a title="Thêm vào danh sách yêu thích" class="add-wish-list add-vong-tron text-decoration-none"
-                  id="id-add-wish-list" onclick="addWish()">
-                </a>
-                <a href="#" class="compart-wish-list add-vong-tron text-decoration-none">
-                </a>
-              </div>
-              <div class="name-of-bread">Bánh mì Sài Gòn</div>
-            </form>
+
+                  <div class="quantity">
+                    <div class="text-quantity">Số lượng</div>
+                    <a class="btn-desc">
+                      <img src="../../images/icons/iconSub.png" alt="" class="icon-sub" />
+                    </a>
+                    <input type="number" class="counter" value="1" />
+                    <a class="btn-inc">
+                      <img src="../../images/icons/iconAdd.png" alt="" class="icon-add" />
+                    </a>
+                  </div>
+                  <div class="add-to-card">
+                    <a href="javascript.void(0)" class="text-decoration-none">
+                      <div class="text-add-to-card">THÊM VÀO GIỎ HÀNG</div>
+                    </a>
+                  </div>
+                  <div class="wish-list">
+                      <div class="buy-1-click text-decoration-none">
+                          <div class="icon-buy-1-click">
+                            <i class="fas fa-hand-point-up"></i>
+                          </div>
+                          <div class="text-buy-1-click" data-target="#form" data-toggle="modal" style="cursor: pointer">
+                              MUA NGAY VỚI 1-CLICK
+                          </div>
+
+                          <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header border-bottom-0">
+                                          <h5 class="modal-title" id="exampleModalLabel">
+                                              Tiến hành đặt hàng
+                                          </h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                      </div>
+                                      <form>
+                                        <div class="modal-body">
+                                          <div class="form-group pl-0">
+                                            <label for="email1">Họ và tên</label>
+                                            <input type="text" class="form-control w-100" id="email1" aria-describedby="emailHelp" />
+                                            <small id="emailHelp" class="form-text text-muted"></small>
+                                          </div>
+                                          <div class="form-group pl-0">
+                                            <label for="password1">Số điện thoại</label>
+                                            <input type="number" class="form-control w-100" id="password1" />
+                                          </div>
+                                          <div class="form-group pl-0">
+                                            <label for="password1">Địa chỉ</label>
+                                            <input type="text" class="form-control w-100" id="password2" />
+                                          </div>
+                                        </div>
+                                          <div class="modal-footer border-top-0 d-flex justify-content-center">
+                                            <button type="submit" class="btn rounded-50" id="btn-buynow" style="background-color: #e6b400;color: #8b6300;font-weight: 500;">Đặt hàng
+
+                                            </button>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a title="Thêm vào danh sách yêu thích" class="add-wish-list add-vong-tron text-decoration-none" id="id-add-wish-list" onclick="addWish()">
+                      </a>
+                      <a href="products.html" class="compart-wish-list add-vong-tron text-decoration-none">
+                      </a>
+                  </div>
+                  <div class="name-of-bread">Bánh mì Sài Gòn</div>
+              </form>
           </div>
           <div class="col-lg-4">
-            <div class="product-right">
-              <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
-                        <i class="fas fa-exclamation-circle"></i>
-                        Lợi ích của chúng tôi
-                        <span class="fa fa-chevron-up"></span>
-                      </button>
-                    </h2>
-                  </div>
+              <div class="product-right">
+                  <div class="accordion" id="accordionExample">
+                      <div class="card">
+                          <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <i class="fas fa-exclamation-circle"></i>
+              Lợi ích của chúng tôi
+              <span class="fa fa-chevron-up"></span>
+            </button>
+                              </h2>
+                          </div>
 
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
-                    <div class="card-body">
-                      <ul>
-                        <li>Cho người ăn kiêng</li>
-                        <li>Ăn chay</li>
-                        <li>Từ thực phẩm tươi</li>
-                        <li>Giá tốt nhất</li>
-                      </ul>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                              <div class="card-body">
+                                  <ul>
+                                      <li>Cho người ăn kiêng</li>
+                                      <li>Ăn chay</li>
+                                      <li>Từ thực phẩm tươi</li>
+                                      <li>Giá tốt nhất</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  <div class="card">
+                      <div class="card-header" id="headingTwo">
+                          <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-money-check-alt"></i>Các lựa chọn thanh toán 
+                                <span class="fa fa-chevron-up"></span>
+                              </button>
+                          </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                        <div class="card-body">
+                          <ul>
+                            <li>Thanh toán sau khi nhận hàng (COD)</li>
+                            <li>Thanh toán qua thẻ tín dụng, thẻ ghi nợ</li>
+                            <li>Thanh toán qua ví MoMo</li>
+                            <li>
+                                Thanh toán qua thẻ ATM có đăng ký thanh toán trực tuyến
+                            </li>
+                          </ul>
+                        </div>
                     </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <i class="fas fa-money-check-alt"></i>
-                        Các lựa chọn thanh toán
-                        <span class="fa fa-chevron-up"></span>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
-                    <div class="card-body">
-                      <ul>
-                        <li>Thanh toán sau khi nhận hàng (COD)</li>
-                        <li>Thanh toán qua thẻ tín dụng, thẻ ghi nợ</li>
-                        <li>Thanh toán qua ví MoMo</li>
-                        <li>
-                          Thanh toán qua thẻ ATM có đăng ký thanh toán trực
-                          tuyến
-                        </li>
-                      </ul>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fa fa-truck"></i>Hình thức vận chuyển
+                            <span class="fa fa-chevron-up"></span>
+                          </button>
+                        </h2>
+                      </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                          <div class="card-body">
+                            <ul>
+                              <li>Nội thành (trong 2 giờ)</li>
+                              <li>Các huyện ngoại thành(3-4 giờ)</li>
+                              <li>Các tỉnh (2-5 ngày)</li>
+                            </ul>
+                          </div>
+                        </div>
                     </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="fa fa-truck"></i>
-                        Hình thức vận chuyển
-                        <span class="fa fa-chevron-up"></span>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
-                    <div class="card-body">
-                      <ul>
-                        <li>Nội thành (trong 2 giờ)</li>
-                        <li>Các huyện ngoại thành(3-4 giờ)</li>
-                        <li>Các tỉnh (2-5 ngày)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-            <div class="social mt-3">
-              <ul class="nav" style="gap: 15px">
-                <li>
-                  <a href="https://twitter.com/" target="blank" class="badge badge-primary td-none"
-                    title="Kết nối với Twitter"><i class="fab fa-twitter"></i> Tweet</a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/" target="blank" class="badge badge-primary td-none"
-                    title="Like Facebook"><i class="fa fa-thumbs-up"></i> Like 1</a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pita-bakery.com%2Feat-in%2Fpita-sandwich-fill-free%2F&display=popup&ref=plugin&src=like&kid_directed_site=0"
-                    target="blank" class="badge badge-primary td-none" title="Share">Share</a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.com/pin/create/button/?guid=GUVj5o7KqYBh-1&url=https%3A%2F%2Fwww.pita-bakery.com%2Fproduct-range%2Fpocket-pita-bread%2F&media=https%3A%2F%2Fwww.pita-bakery.com%2Fimages%2Fdetailed%2F1%2Fpita_bread.jpg&description=Premium%20white%20Pita"
-                    target="blank" class="badge badge-dark td-none" title="Lưu ghim này"><i
-                      class="fab fa-pinterest-p"></i> Lưu</a>
-                </li>
-              </ul>
-            </div>
+              <div class="social mt-3">
+                  <ul class="nav" style="gap: 15px">
+                      <li>
+                          <a href="https://twitter.com/" target="blank" class="badge badge-primary td-none" title="Kết nối với Twitter"><i class="fab fa-twitter"></i> Tweet</a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com/" target="blank" class="badge badge-primary td-none" title="Like Facebook"><i class="fa fa-thumbs-up"></i> Like 1</a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pita-bakery.com%2Feat-in%2Fpita-sandwich-fill-free%2F&display=popup&ref=plugin&src=like&kid_directed_site=0" target="blank" class="badge badge-primary td-none" title="Share">Share</a>
+                      </li>
+                      <li>
+                          <a href="https://www.pinterest.com/pin/create/button/?guid=GUVj5o7KqYBh-1&url=https%3A%2F%2Fwww.pita-bakery.com%2Fproduct-range%2Fpocket-pita-bread%2F&media=https%3A%2F%2Fwww.pita-bakery.com%2Fimages%2Fdetailed%2F1%2Fpita_bread.jpg&description=Premium%20white%20Pita"
+                              target="blank" class="badge badge-dark td-none" title="Lưu ghim này">
+                              <i class="fab fa-pinterest-p"></i> Lưu
+                            </a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </div>
-      <div class="description">
-        <hr style="max-width: 100%" />
-        <div>
+  </div>
+  <div class="description">
+      <hr style="max-width: 100%" />
+      <div>
           <span class="text-description">Mô tả</span>
           <span>
-            <p>
-              "Ai bánh mì Sài Gòn đặc ruột, thơm bơ đây...", "Bánh mì Sài Gòn
-              2 ngàn một ổ" có lẽ đã quá quen thuộc với người dân Sài Gòn hàng
-              chục năm qua, trở thành một phần không thể thiếu trong vô số
-              những âm thanh náo nhiệt của phố thị.
-              <br />
-              Vàng ruộm, thơm lừng mùi bơ, giòn tan và nóng hổi là những gì
-              người ta nghĩ đến khi nhắc đến bánh mì. Dạo qua những con đường,
-              con hẻm ở Sài Gòn, không khó để bắt gặp những xe bánh mì dạo,
-              những cửa hàng bán bánh mì từ bình dân đến cao cấp. <br />
-              Ngày trước, những tiếng rao bánh mì đã trở thành một phần kí ức
-              của nhiều người dân Sài Gòn. Cuộc sống ngày càng hiện đại, những
-              tiếng rao nay đã được thay bằng tiếng loa tự động, và giá những
-              ổ bánh mì cũng tăng dần lên. <br />
+  <p>
+    "Ai bánh mì Sài Gòn đặc ruột, thơm bơ đây...", "Bánh mì Sài Gòn
+    2 ngàn một ổ" có lẽ đã quá quen thuộc với người dân Sài Gòn hàng
+    chục năm qua, trở thành một phần không thể thiếu trong vô số
+    những âm thanh náo nhiệt của phố thị.
+    <br />
+    Vàng ruộm, thơm lừng mùi bơ, giòn tan và nóng hổi là những gì
+    người ta nghĩ đến khi nhắc đến bánh mì. Dạo qua những con đường,
+    con hẻm ở Sài Gòn, không khó để bắt gặp những xe bánh mì dạo,
+    những cửa hàng bán bánh mì từ bình dân đến cao cấp. <br />
+    Ngày trước, những tiếng rao bánh mì đã trở thành một phần kí ức
+    của nhiều người dân Sài Gòn. Cuộc sống ngày càng hiện đại, những
+    tiếng rao nay đã được thay bằng tiếng loa tự động, và giá những
+    ổ bánh mì cũng tăng dần lên. <br />
 
-              Thế nhưng, bánh mì mãi mãi vẫn sẽ là món ăn "trường tồn" theo
-              thời gian cùng cuộc sống của người dân ở mảnh đất Đông Nam Bộ
-              này.
-            </p>
-          </span>
-        </div>
+    Thế nhưng, bánh mì mãi mãi vẫn sẽ là món ăn "trường tồn" theo
+    thời gian cùng cuộc sống của người dân ở mảnh đất Đông Nam Bộ
+    này.
+  </p>
+</span>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
+          <div class="card bg-w">
+              <div class="card-header">
+                  <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
+              </div>
+              <div class="card-body">
+                  <h3 class="product-name">Bánh mì gì đó</h3>
+                  <div class="unit-price">15.000</div>
+              </div>
+
+              <div class="card-footer bg-w">
+                  <div class="icons">
+                      <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
+                          <i class="fas fa-hand-point-up"></i>
+                      </a>
+
+                      <a href="products.html" class="fa-3x mx-1" title="xem trước">
+                          <i class="far fa-eye"></i>
+                      </a>
+
+                      <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                          <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
+      <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
           <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">Bánh mì gì đó</h3>
-              <div class="unit-price">15.000</div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
+              <div class="card-header">
+                  <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
               </div>
-            </div>
-          </div>
-        </div>
+              <div class="card-body">
+                  <h3 class="product-name">Bánh mì gì đó</h3>
+                  <div class="unit-price">15.000</div>
+              </div>
 
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
+              <div class="card-footer bg-w">
+                  <div class="icons">
+                      <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
+                          <i class="fas fa-hand-point-up"></i>
+                      </a>
+
+                      <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
+                          <i class="far fa-eye"></i>
+                      </a>
+
+                      <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                          <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
           <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">Bánh mì gì đó</h3>
-              <div class="unit-price">15.000</div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
+              <div class="card-header">
+                  <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
               </div>
-            </div>
-          </div>
-        </div>
+              <div class="card-body">
+                  <h3 class="product-name">Bánh mì gì đó</h3>
+                  <div class="unit-price">15.000</div>
+              </div>
 
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
+              <div class="card-footer bg-w">
+                  <div class="icons">
+                      <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
+                          <i class="fas fa-hand-point-up"></i>
+                      </a>
+
+                      <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
+                          <i class="far fa-eye"></i>
+                      </a>
+
+                      <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                          <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
           <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">Bánh mì gì đó</h3>
-              <div class="unit-price">15.000</div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
+              <div class="card-header">
+                  <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
-          <div class="card bg-w">
-            <div class="card-header">
-              <img src="../../images/banhngot/pita_bread.jpg" alt="gido" />
-            </div>
-            <div class="card-body">
-              <h3 class="product-name">Bánh mì gì đó</h3>
-              <div class="unit-price">15.000</div>
-            </div>
-
-            <div class="card-footer bg-w">
-              <div class="icons">
-                <a href="#" class="fa-3x mx-1" title="mua ngay với 1-click">
-                  <i class="fas fa-hand-point-up"></i>
-                </a>
-
-                <a href="#" class="fa-3x mx-1" title="xem trước">
-                  <i class="far fa-eye"></i>
-                </a>
-
-                <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
-                  <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
-                </a>
+              <div class="card-body">
+                  <h3 class="product-name">Bánh mì gì đó</h3>
+                  <div class="unit-price">15.000</div>
               </div>
-            </div>
+
+              <div class="card-footer bg-w">
+                  <div class="icons">
+                      <a href="checkout.html" class="fa-3x mx-1" title="mua ngay với 1-click">
+                          <i class="fas fa-hand-point-up"></i>
+                      </a>
+
+                      <a href="single-product.html" class="fa-3x mx-1" title="xem trước">
+                          <i class="far fa-eye"></i>
+                      </a>
+
+                      <a class="fa-3x mx-1" title="thêm vào giỏ hàng">
+                          <i class="fas fa-cart-plus" onclick="this.style.color = 'rgba(235, 128, 29, 1)'"></i>
+                      </a>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
+</div>
   <!-- Footer -->
   <footer class="page-footer bg-dark pt-4 c-dark-2">
     <div class="container-fluid text-center text-md-left">
       <div class="row">
         <div class="col-md-3 mt-md-0 mt-3">
-          <h5 class="text-uppercase">CKT Bakery</h5>
-          <div class="small-size">Nhận thông báo từ chúng tôi</div>
-          <div class="input-group my-3 mx-auto ml-lg-0" style="width: 250px">
-            <input type="text" class="form-control" placeholder="Nhập Email của bạn" />
-            <a href="#" class="input-group-append">
+          <h5 class="text-uppercase">VVV Bakery</h5>
+          <div class="small-size">
+            Nhận thông báo từ chúng tôi
+          </div>
+          <div class="input-group my-3 mx-auto ml-lg-0" style="width: 250px;">
+            <input type="text" class="form-control" placeholder="Nhập Email của bạn">
+            <a href="gmail.com" class="input-group-append">
               <span class="input-group-text">
                 <i class="far fa-paper-plane"></i>
               </span>
             </a>
           </div>
-          <hr />
+          <hr>
           <div>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-facebook"></i></a>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-youtube"></i></a>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
-            <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://facebook.com/ng.neko.592"><i class="fab fa-2x fa-facebook"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://youtube.com"><i class="fab fa-2x fa-youtube"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://www.twitter.com/"><i class="fab fa-2x fa-twitter-square"></i></a>
+            <a class="d-inline-block mr-3 c-dark-2" href="https://www.instagram.com/anh_tu._/"><i class="fab fa-2x fa-instagram"></i></a>
           </div>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3" />
@@ -600,7 +599,7 @@
               <a href="#">Tổng quan</a>
             </li>
             <li>
-              <a href="#">Bản đồ</a>
+              <a href="https://www.google.com/maps/place/7+%C4%90.+s%E1%BB%91+66,+T%C3%A2n+Phong,+Qu%E1%BA%ADn+7,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7368395,106.7038752,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f9a2c0d2115:0x1559489db04f5c7b!8m2!3d10.7368395!4d106.7060639?hl=vi-VN">Bản đồ</a>
             </li>
           </ul>
         </div>
@@ -609,16 +608,13 @@
           <h5 class="text-uppercase">Tài khoản của tôi</h5>
           <ul class="list-unstyled">
             <li>
-              <a href="#">Đăng nhập</a>
+              <a href="javascript:void(0)" onclick="openform()">Đăng nhập</a>
             </li>
             <li>
-              <a href="#">Tạo tài khoản</a>
+              <a href="javascript:void(0)" onclick="openform()">Tạo tài khoản</a>
             </li>
             <li>
-              <a href="#">Đặt hàng</a>
-            </li>
-            <li>
-              <a href="#">Giỏ hàng</a>
+              <a href="cart.html">Giỏ hàng</a>
             </li>
             <li>
               <a href="#">Chỉnh sửa thông tin</a>
@@ -635,7 +631,9 @@
               </div>
             </li>
             <li>
-              <a href="tel:+8432-8473-083" class="small-size tel">0328473083</a>
+              <div class="small-size tel"> 
+                <a href="tel:+8432-8473-083">0328473083</a>
+              </div>
             </li>
             <li>
               <div class="small-size opening-days">
@@ -650,21 +648,23 @@
             </li>
             <li>
               <div class="small-size mail">
-                <a href="mail:tusocnau@gmail.com">
-                  ctkbakeryloveu.@gmail.com
-                </a>
+                <a href="mailto:vvvbakeryloveu@gmail.com"> vvvbakeryloveu@gmail.com </a>
               </div>
             </li>
           </ul>
         </div>
+
       </div>
+
     </div>
 
     <div class="footer-copyright text-center py-3">
       © 2020 Copyright:
-      <a href="#"> ctkbakeryloveu.com</a>
+      <a href="mailto:vvvbakeryloveu@gmail.com"> vvvbakeryloveu@gmail.com</a>
     </div>
+
   </footer>
+
 
   <!--import another javascript source-->
   <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
@@ -674,7 +674,10 @@
   <script src="../../components/backtotop/script.js"></script>
   <script src="../../components/popup-form/script.js"></script>
   <script src="../../components/signup-signin/script.js"></script>
-  <script src="../../components/single-product/script.js"></script>
+  <script src="../../components/button-icon-link/script.js"></script>
+  <script src="../../components/see-more-collapse/script.js"></script>
+  <script src="../../components/sort-cards/script.js"></script>
+
 </body>
 
 </html>
