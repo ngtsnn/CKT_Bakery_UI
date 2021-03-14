@@ -1,0 +1,9 @@
+a.see-more-btn {
+    color: #2abce7;
+    background-color: blue;
+}
+
+a.see-more-btn:hover{
+    cursor: pointer;
+    color: rgb(230, 180, 0);
+}

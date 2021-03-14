@@ -1,0 +1,46 @@
+.heading-bar{
+    width: 100%;
+    height: 80px;
+}
+
+.logo{
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.heading-right{
+    float:right;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.bakery-name{
+    margin-right: 50px;
+}
+
+#search {
+    color: rgb(230, 180, 0);
+    border-color: rgb(230, 180, 0);
+}
+
+#search:hover {
+    color: rgb(230, 180, 0);
+    border-color: rgb(230, 180, 0);
+    background-color:  rgb(247, 232, 181);
+}
+
+.nav-link, .dropdown-item{
+    text-decoration: none;
+}
+
+.nav-link:hover, .dropdown-item:hover{
+    background-color: rgb(230, 180, 0);
+    text-decoration: none;
+    border-radius: 3%;
+}

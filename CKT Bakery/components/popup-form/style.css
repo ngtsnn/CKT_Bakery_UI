@@ -1,0 +1,37 @@
+.form-popup {
+    display: none;
+    position: fixed;
+    background-color: white;
+    width: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 1000; 
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    padding: 0 20px;
+    min-width: 300px;
+    padding: 0px;
+}
+
+.form-popup.is-login{
+    height: 340px;
+    transition: .4s;
+}
+
+.form-popup.is-signup{
+    height: 400px;
+    transition: .4s;
+}
+
+.form-group {
+    padding-left: 10px;
+}
+
+.form-control {
+    width: 400px;
+}
+

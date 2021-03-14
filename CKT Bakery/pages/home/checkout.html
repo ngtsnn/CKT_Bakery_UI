@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--import form another css source-->
+    <!--must reset first-->
+    <link rel="stylesheet" href="../../asset/reset.css" />
+    <link rel="stylesheet" href="../../asset/setup.css" />
+    <link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../asset/fontawesome/css/all.min.css" />
+
+    <!--add your style here-->
+    <link rel="stylesheet" href="../../components/header/style.css" />
+    <link rel="stylesheet" href="../../components/footer/style.css" />
+    <link rel="stylesheet" href="../../components/title/style.css" />
+    <link rel="stylesheet" href="../../components/cards/style.css" />
+    <link rel="stylesheet" href="../../components/carousel/style.css" />
+    <link rel="stylesheet" href="../../components/jumbotron/style.css" />
+    <link rel="stylesheet" href="../../components/backtotop/style.css" />
+    <link rel="stylesheet" href="../../components/popup-form/style.css" />
+    <link rel="stylesheet" href="../../components/signup-signin/style.css" />
+    <link rel="stylesheet" href="../../components/button-icon-link/style.css" />
+    <link rel="stylesheet" href="../../components/see-more-collapse/style.css" />
+    <link rel="stylesheet" href="../../components/checkout/style.css" />
+    <link rel="stylesheet" href="../../components/cart/style.css" />
+
+    <title>CKT Checkout</title>
+  </head>
+
+  <body class="bg-d">
+
+    <!--header-->
+    <div class="header bg-w">
+      <div class="heading-bar">
+        <a href="../home/index.html" class="logo">
+          <img src="../../images/logos/logo_small.png" alt="CKT Bakery" />
+        </a>
+        <span class="heading-right">
+          <button class=" mr-2 c-yellow loginbtn" onclick="openform()">
+            <i class="fa-2x far fa-user"></i>
+          </button>
+          <div class="form-popup is-login col-lg-6" id="myForm">
+            <div class="btn-group">
+              <button id="login-side-btn" class="active">
+                Đăng Nhập
+              </button>
+              <button id="signup-side-btn">
+                Đăng Kí
+              </button>
+              <button type="button" class="btn-cancel" onclick="closeform()">
+                <i class="fas fa-sign-out-alt"></i>
+              </button>
+            </div>
+            <div class="l-s-forms">
+              <div class="login active" id="login-side">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <label for="username" class="col-form-label"> Tên đăng nhập </label>
+                      <input type="text" class="form-control" id="username" placeholder=" Tên đăng nhập" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <label for="inputPassword3" class="col-form-label">Mật khẩu</label>
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Mật khẩu" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                          Nhớ mật khẩu
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="signup" id="signup-side">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <label for="username" class="col-form-label"> Tên đăng nhập </label>
+                      <input type="text" class="form-control" id="username" placeholder=" Tên đăng nhập" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <label for="password" class="col-form-label">Mật khẩu</label>
+                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <label for="refill-password" class="col-form-label">Nhập lại mật khẩu</label>
+                    <input type="password" class="form-control" id="refill-password" placeholder="Nhập lại mật khẩu" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12">
+                      <div class="gap-xs"></div>
+                      <button type="submit" class="btn btn-primary">Đăng kí</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a class="fa-2x mr-3 c-yellow" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </span>
+      </div>
+      <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-l">
+          <div class="large-size c-yellow mr-md">CKT Bakery</div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto pt-xs">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="sweet-products" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Sản Phẩm
+                </a>
+                <div class="dropdown-menu" aria-labelledby="sweet-products">
+                  <a class="dropdown-item" href="./products.html">Bánh Mì Ngọt</a>
+                  <a class="dropdown-item" href="./products.html">Bánh Mì Chay</a>
+                  <a class="dropdown-item" href="./products.html">Bánh Donus</a>
+                  <a class="dropdown-item" href="./products.html">Bánh Kemt</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="./products.html">Xem thêm</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="sweet-products" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Bánh ngọt
+                </a>
+                <div class="dropdown-menu" aria-labelledby="sweet-products">
+                  <a class="dropdown-item" href="./products.html">Bánh Pudding</a>
+                  <a class="dropdown-item" href="./products.html">Bánh kem</a>
+                  <a class="dropdown-item" href="./products.html">Bánh Donus</a>
+                  <a class="dropdown-item" href="./products.html">Bánh mì ngọt</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="./products.html">Xem thêm</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="salty-products" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Bánh mặn
+                </a>
+                <div class="dropdown-menu" aria-labelledby="salty-products">
+                  <a class="dropdown-item" href="#">Bánh mì mặn</a>
+                  <a class="dropdown-item" href="#">Bánh Tart</a>
+                  <a class="dropdown-item" href="#">Bánh Pizza</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Liên Hệ & Hợp Tác</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--body-->
+    <div class="row">
+      <div class="col-70">
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col-50">
+                <h3>Địa Chỉ Nhận Hàng</h3>
+                <label for="phone">
+                  <i class="fa fa-phone"></i> 
+                  Số điện thoại
+                </label>
+                <input type="tel" class="form-control" id="validationServer04" placeholder="Số điện thoại" pattern="[0]{1}[0-9]{9}" required/>
+                <label for="adr">
+                  <i class="fa fa-address-card"></i> 
+                  Địa chỉ
+                </label>
+                <input type="text" class="form-control" id="validationServer04" placeholder="Địa chỉ giao hàng" required/>
+                <label for="city">
+                  <i class="fa fa-location-arrow"></i> 
+                  Tỉnh thành
+                </label>
+                <input type="text" class="form-control" id="validationServer04" placeholder="Tỉnh thành" required/>
+              </div>
+              <div class="col-50">
+                <h3>Hình thức giao hàng</h3>
+                <div class="icon-container">
+                  <select class="btn selectpicker" data-style="btn-success">
+                    <option>Giao hàng tiết kiệm</option>
+                    <option>Giao hàng nhanh</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <div class="custom-control custom-checkbox mb-5">
+                    <input class="form-check-input" type="checkbox" id="invalidCheck3" required/>
+                    <label class="form-check-label" for="invalidCheck2">
+                      Tôi đồng ý với
+                      <button type="button" class="btn bg-transparent" data-toggle="modal" data-target="#myModal">
+                        điều khoản sử dụng
+                      </button>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Điều khoản</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <!-- &times; -->
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Chào mừng bạn đến với sàn giao dịch thương mại điện tử CKT
+                    Bakery qua giao diện website hoặc ứng dụng di động (“Trang
+                    CKT Bakery”). <br /><br />Trước khi sử dụng Trang CKT Bakery
+                    hoặc tạo tài khoản CKT Bakery (“Tài Khoản”), vui lòng đọc kỹ
+                    các Điều Khoản Dịch Vụ dưới đây và Quy Chế Hoạt Động Sàn
+                    Giao Dịch Thương Mại Điện Tử CKT Bakery để hiểu rõ quyền lợi
+                    và nghĩa vụ hợp pháp của mình đối với Công ty TNHH CKT
+                    Bakery và các công ty liên kết và công ty con của CKT Bakery
+                    (sau đây được gọi riêng là “CKT Bakery”, gọi chung là “chúng
+                    tôi”, “của chúng tôi”). “Dịch Vụ” chúng tôi cung cấp hoặc
+                    sẵn có bao gồm <br />(a) Trang CKT Bakery, <br />(b) các
+                    dịch vụ được cung cấp bởi Trang CKT Bakery và bởi phần mềm
+                    dành cho khách hàng của CKT Bakery có sẵn trên Trang CKT
+                    Bakery, và <br />(c) tất cả các thông tin, đường dẫn, tính
+                    năng, dữ liệu, văn bản, hình ảnh, biểu đồ, âm nhạc, âm
+                    thanh, video (bao gồm cả các đoạn video được đăng tải trực
+                    tiếp theo thời gian thực (livestream)), tin nhắn, tags, nội
+                    dung, chương trình, phần mềm, ứng dụng dịch vụ (bao gồm,
+                    nhưng không giới hạn, bất kỳ ứng dụng dịch vụ di động nào)
+                    hoặc các tài liệu khác có sẵn trên Trang CKT Bakery hoặc các
+                    dịch vụ liên quan đến Trang CKT Bakery (“Nội Dung”). Bất kỳ
+                    tính năng mới nào được bổ sung hoặc mở rộng đối với Dịch Vụ
+                    đều thuộc phạm vi điều chỉnh của Điều Khoản Dịch Vụ này.
+                    Điều Khoản Dịch Vụ này điều chỉnh việc bạn sử dụng Dịch Dụ
+                    cung cấp bởi CKT Bakery.<br /><br />
+                    1.1 Dịch Vụ bao gồm dịch vụ sàn giao dịch trực tuyến kết nối
+                    người tiêu dùng với nhau nhằm mang đến cơ hội kinh doanh
+                    giữa người mua (“Người Mua”) và người bán (“Người Bán”) (gọi
+                    chung là “bạn”, “Người Sử Dụng” hoặc “Các Bên”). Hợp đồng
+                    mua bán thật sự là trực tiếp giữa Người Mua và Người Bán.
+                    Các Bên liên quan đến giao dịch đó sẽ hoàn toàn chịu trách
+                    nhiệm đối với hợp đồng mua bán giữa họ, việc đăng bán hàng
+                    hóa, bảo hành sản phẩm và tương tự. CKT Bakery không can
+                    thiệp vào giao dịch giữa các Người Sử Dụng. CKT Bakery có
+                    thể hoặc không sàng lọc trước Người Sử Dụng hoặc Nội Dung
+                    hoặc thông tin cung cấp bởi Người Sử Dụng. CKT Bakery bảo
+                    lưu quyền loại bỏ bất cứ Nội Dung hoặc thông tin nào trên
+                    Trang CKT Bakery theo Mục 6.4 bên dưới. CKT Bakery không bảo
+                    đảm cho việc các Người Sử Dụng sẽ thực tế hoàn thành giao
+                    dịch. Lưu ý, CKT Bakery sẽ là bên trung gian quản lý tình
+                    trạng hàng hóa và mua bán giữa Người Mua và Người Bán và
+                    quản lý vấn đề chuyển phát, trừ khi Người Mua và Người Bán
+                    thể hiện mong muốn tự giao dịch với nhau một cách rõ ràng.
+                    <br /><br />1.2 Trước khi trở thành Người Sử Dụng của Trang
+                    CKT Bakery, bạn cần đọc và chấp nhận mọi điều khoản và điều
+                    kiện được quy định trong, và dẫn chiếu đến, Điều Khoản Dịch
+                    Vụ này và Chính Sách Bảo Mật được dẫn chiếu theo đây.
+                    <br /><br />1.3 CKT Bakery bảo lưu quyền thay đổi, chỉnh
+                    sửa, tạm ngưng hoặc chấm dứt tất cả hoặc bất kỳ phần nào của
+                    Trang CKT Bakery hoặc Dịch Vụ vào bất cứ thời điểm nào theo
+                    qui định pháp luật. CKT Bakery không chịu trách nhiệm đối
+                    với việc phát hành các Dịch Vụ hoặc tính năng của Dịch Vụ
+                    với phiên bản thử nghiệm mà các phiên bản này có thể không
+                    đúng hoặc không hoàn toàn giống với phiên bản cuối cùng. CKT
+                    Bakery có toàn quyền giới hạn một số tính năng hoặc phạm vi
+                    truy cập của bạn đối với một phần hoặc toàn bộ Trang CKT
+                    Bakery hoặc Dịch Vụ của CKT Bakery mà không cần thông báo
+                    hay chịu trách nhiệm.
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Đóng
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="invalid-feedback">
+              Bạn phải đồng ý trước khi đặt hàng
+            </div>
+            <div>
+              <input type="submit" value="Đặt hàng" class="my-btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-30">
+        <div class="container">
+          <h4>Đơn hàng</h4>
+          <div class="shopping-cart">
+            <div class="column-labels">
+              <label class="product-details">Bánh</label>
+              <label class="product-price">Giá</label>
+              <label class="product-quantity">Số lượng</label>
+            </div>
+
+            <div class="product">
+              <div class="product-details">
+                <div class="product-title">Tên bánh</div>
+              </div>
+              <div class="product-price">10000</div>
+              <div class="product-quantity">x1</div>
+            </div>
+
+            <div class="product">
+              <div class="product-details">
+                <div class="product-title">Tên Bánh</div>
+              </div>
+              <div class="product-price">20000</div>
+              <div class="product-quantity">x1</div>
+            </div>
+          </div>
+          <h3>
+            <p>
+              Thành tiền
+              <span class="totals-item" style="color: black;">
+                <b>3000000</b>
+              </span>
+            </p>
+          </h3>
+          <button type="button" class="my-btn btn-primary">Mua thêm</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer bg-dark pt-4 c-dark-2">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-3 mt-md-0 mt-3">
+            <h5 class="text-uppercase">CKT Bakery</h5>
+            <div class="small-size">
+              Nhận thông báo từ chúng tôi
+            </div>
+            <div class="input-group my-3 mx-auto ml-lg-0" style="width: 250px;">
+              <input type="text" class="form-control" placeholder="Nhập Email của bạn">
+              <a href="#" class="input-group-append">
+                <span class="input-group-text">
+                  <i class="far fa-paper-plane"></i>
+                </span>
+              </a>
+            </div>
+            <hr>
+            <div>
+              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-facebook"></i></a>
+              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-youtube"></i></a>
+              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
+              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+            </div>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Về chúng tôi</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Lịch sử </a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Tổng quan</a>
+              </li>
+              <li>
+                <a href="#">Bản đồ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Tài khoản của tôi</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Đăng nhập</a>
+              </li>
+              <li>
+                <a href="#">Tạo tài khoản</a>
+              </li>
+              <li>
+                <a href="#">Đặt hàng</a>
+              </li>
+              <li>
+                <a href="#">Giỏ hàng</a>
+              </li>
+              <li>
+                <a href="#">Chỉnh sửa thông tin</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Liên hệ chúng tôi</h5>
+            <ul class="list-unstyled">
+              <li>
+                <div class="small-size address">
+                  7C1 Đường 66, Phường Tân Phong, Quận 7, TPHCM.
+                </div>
+              </li>
+              <li>
+                <a href="tel:+8432-8473-083" class="small-size tel">0328473083</a>
+              </li>
+              <li>
+                <div class="small-size opening-days">
+                  Chúng tôi phục vụ các bạn mỗi ngày, kể cả ngày lễ, nghỉ tết
+                </div>
+                <div class="small-size opening-times">
+                  thứ 2 - thứ 6: 7h - 21h
+                </div>
+                <div class="small-size opening-times">
+                  thứ 7 và chủ nhật: 7h - 23h
+                </div>
+              </li>
+              <li>
+                <div class="small-size mail">
+                  <a href="mail:tusocnau@gmail.com"> ctkbakeryloveu.@gmail.com </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="#"> ctkbakeryloveu.com</a>
+      </div>
+
+    </footer>
+
+    <!--import another javascript source-->
+    <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--import your js here-->
+    <script src="../../components/backtotop/script.js"></script>
+    <script src="../../components/popup-form/script.js"></script>
+    <script src="../../components/signup-signin/script.js"></script>
+    <script src="../../components/button-icon-link/script.js"></script>
+    <script src="../../components/see-more-collapse/script.js"></script>
+    <script src="../../components/checkout/func.js"></script>
+
+  </body>
+</html>
