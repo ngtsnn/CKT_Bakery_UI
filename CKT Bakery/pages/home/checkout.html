@@ -201,17 +201,17 @@
                   <i class="fa fa-phone"></i> 
                   Số điện thoại
                 </label>
-                <input type="tel" class="form-control" id="validationServer04" placeholder="Số điện thoại" pattern="[0]{1}[0-9]{9}" required/>
+                <input type="tel" class="form-control" style="width:100%" id="validationServer04" placeholder="Số điện thoại" pattern="[0]{1}[0-9]{9}" required/>
                 <label for="adr">
                   <i class="fa fa-address-card"></i> 
                   Địa chỉ
                 </label>
-                <input type="text" class="form-control" id="validationServer04" placeholder="Địa chỉ giao hàng" required/>
+                <input type="text" class="form-control" style="width:100%" id="validationServer04" placeholder="Địa chỉ giao hàng" required/>
                 <label for="city">
                   <i class="fa fa-location-arrow"></i> 
                   Tỉnh thành
                 </label>
-                <input type="text" class="form-control" id="validationServer04" placeholder="Tỉnh thành" required/>
+                <input type="text" class="form-control" style="width:100%" id="validationServer04" placeholder="Tỉnh thành" required/>
               </div>
               <div class="col-50">
                 <h3>Hình thức giao hàng</h3>
@@ -225,7 +225,7 @@
               <div class="form-group">
                 <div class="form-check">
                   <div class="custom-control custom-checkbox mb-5">
-                    <input class="form-check-input" type="checkbox" id="invalidCheck3" required/>
+                    <input class="form-check-input" type="checkbox" id="invalidCheck3" required style="margin-top: 10px;"/>
                     <label class="form-check-label" for="invalidCheck2">
                       Tôi đồng ý với
                       <button type="button" class="btn bg-transparent" data-toggle="modal" data-target="#myModal">
@@ -372,7 +372,7 @@
       <div class="container-fluid text-center text-md-left">
         <div class="row">
           <div class="col-md-3 mt-md-0 mt-3">
-            <h5 class="text-uppercase">CKT Bakery</h5>
+            <h5 class="text-uppercase">VVV Bakery</h5>
             <div class="small-size">
               Nhận thông báo từ chúng tôi
             </div>
@@ -386,14 +386,14 @@
             </div>
             <hr>
             <div>
-              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-facebook"></i></a>
-              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-youtube"></i></a>
-              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
-              <a class="d-inline-block mr-3 c-dark-2" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+              <a class="d-inline-block mr-3 c-dark-2" href="https://facebook.com/ng.neko.592"><i class="fab fa-2x fa-facebook"></i></a>
+              <a class="d-inline-block mr-3 c-dark-2" href="https://youtube.com"><i class="fab fa-2x fa-youtube"></i></a>
+              <a class="d-inline-block mr-3 c-dark-2" href="https://www.twitter.com/"><i class="fab fa-2x fa-twitter-square"></i></a>
+              <a class="d-inline-block mr-3 c-dark-2" href="https://www.instagram.com/anh_tu._/"><i class="fab fa-2x fa-instagram"></i></a>
             </div>
           </div>
           <hr class="clearfix w-100 d-md-none pb-3" />
-
+  
           <div class="col-md-3 mb-md-0 mb-3">
             <h5 class="text-uppercase">Về chúng tôi</h5>
             <ul class="list-unstyled">
@@ -407,32 +407,29 @@
                 <a href="#">Tổng quan</a>
               </li>
               <li>
-                <a href="#">Bản đồ</a>
+                <a href="https://www.google.com/maps/place/7+%C4%90.+s%E1%BB%91+66,+T%C3%A2n+Phong,+Qu%E1%BA%ADn+7,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7368395,106.7038752,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f9a2c0d2115:0x1559489db04f5c7b!8m2!3d10.7368395!4d106.7060639?hl=vi-VN">Bản đồ</a>
               </li>
             </ul>
           </div>
-
+  
           <div class="col-md-3 mb-md-0 mb-3">
             <h5 class="text-uppercase">Tài khoản của tôi</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#">Đăng nhập</a>
+                <a href="javascript:void(0)" onclick="openform()">Đăng nhập</a>
               </li>
               <li>
-                <a href="#">Tạo tài khoản</a>
+                <a href="javascript:void(0)" onclick="openform()">Tạo tài khoản</a>
               </li>
               <li>
-                <a href="#">Đặt hàng</a>
-              </li>
-              <li>
-                <a href="#">Giỏ hàng</a>
+                <a href="cart.html">Giỏ hàng</a>
               </li>
               <li>
                 <a href="#">Chỉnh sửa thông tin</a>
               </li>
             </ul>
           </div>
-
+  
           <div class="col-md-3 mb-md-0 mb-3">
             <h5 class="text-uppercase">Liên hệ chúng tôi</h5>
             <ul class="list-unstyled">
@@ -442,7 +439,9 @@
                 </div>
               </li>
               <li>
-                <a href="tel:+8432-8473-083" class="small-size tel">0328473083</a>
+                <div class="small-size tel"> 
+                  <a href="tel:+8432-8473-083">0328473083</a>
+                </div>
               </li>
               <li>
                 <div class="small-size opening-days">
@@ -457,22 +456,23 @@
               </li>
               <li>
                 <div class="small-size mail">
-                  <a href="mail:tusocnau@gmail.com"> ctkbakeryloveu.@gmail.com </a>
+                  <a href="mailto:vvvbakeryloveu@gmail.com"> vvvbakeryloveu@gmail.com </a>
                 </div>
               </li>
             </ul>
           </div>
-
+  
         </div>
-
+  
       </div>
-
+  
       <div class="footer-copyright text-center py-3">
         © 2020 Copyright:
-        <a href="#"> ctkbakeryloveu.com</a>
+        <a href="mailto:vvvbakeryloveu@gmail.com"> vvvbakeryloveu@gmail.com</a>
       </div>
-
+  
     </footer>
+  
 
     <!--import another javascript source-->
     <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>

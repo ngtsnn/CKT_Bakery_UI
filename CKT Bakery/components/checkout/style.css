@@ -95,6 +95,10 @@ hr {
     }
     .col-30 {
         margin-bottom: 20px;
+        width: 100%;
+    }
+    .col-70 {
+        width: 100%;
     }
 }
 
